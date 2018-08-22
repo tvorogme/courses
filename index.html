@@ -1,0 +1,3646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Летняя школа программирования и робототехники GoTo Camp 2018</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/static/img/favicon.ico" rel="shortcut icon"
+          type="image/vnd.microsoft.icon"/>
+
+    <meta name="description"
+          content="Летом 2018 года в Подмосковье в формате выездного лагеря пройдут летние школы программирования GoTo Camp для школьников и студентов со всей России. Направления обучения:
+                   прикладное и олимпиадное программирование, машинное обучение, биоинформатика, инфобезопасность, распределённые системы и блокчейн"/>
+    <meta property="og:title" content="Летняя школа программирования GoTo в Москве"/>
+    <meta name="keywords"
+          content="школа программистов, образовательный лагерь, обучение программированию, проектная школа, анализ данных, машинное обучение,
+          биоинформатика, информатика, куда отправить ребенка, подготовка к олимпиадам, лагерь городского типа,
+          городской лагерь, выездной лагерь, весенний лагерь, лагерь для подростков,
+          компьютерный лагерь, весенний лагерь, компьютерная школа, олимпиадное программирование, курсы программирования,
+          лагерь для программистов, программирование для школьников, лагерь для школьников">
+    <meta property="og:image" content="https://goto.msk.ru/static/spirit/soc.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Минималистический фонт -->
+    <link href="css/ubuntu-font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Google normal-otstups API -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSi6YNKwuJPvgEf7WxvYqNVAqbtDc-jnY&callback=initialize"
+            type="text/javascript"></script>
+
+    <!-- Кастомный JS -->
+    <script src="js/index.js"></script>
+    <link href="css/screen.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script src="js/shari.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+    <script src="js/wave.js"></script>
+
+    <style>
+        .slick-prev {
+            left: 25px !important;
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url(./images/buttons.png) center center no-repeat !important;
+            overflow: hidden;
+            background-position: -12px -31px !important;
+            z-index: 100;
+        }
+
+        .slick-next {
+            right: 25px !important;
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url(./images/buttons.png) center center no-repeat !important;
+            overflow: hidden;
+            background-position: -70px -31px !important;
+            z-index: 100;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-size: 0;
+        }
+    </style>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2101650410062511');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=2101650410062511&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+
+
+<div id='ss_menu' style="transform: rotate(90deg)">
+    <div class="hor-fix"><a href="https://www.facebook.com/GoToCampPage/"><i class="fa fa-facebook-official"></i></a>
+    </div>
+    <div class="hor-fix"><a href="https://t.me/goto_channel"><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
+    <div class="hor-fix"><a href="https://vk.com/goto_msk"><i class="fa fa-vk"></i></a></div>
+    <div class="hor-fix"><a href="https://www.instagram.com/goto_goto_goto/"><i class="fa fa-instagram"></i></a></div>
+    <div class='menu hor-fix'>
+        <div class='share' id='ss_toggle' data-rot='90'>
+            <div class='circle_menu'></div>
+            <div class='bar'></div>
+        </div>
+    </div>
+</div>
+<div id="header">
+
+    <a href="https://goto.msk.ru/">
+        <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1"
+                id="house"
+                width="682.66669"
+                height="682.66669"
+                viewBox="0 0 682.66669 682.66669"
+                sodipodi:docname="house.svg"
+                inkscape:version="0.92.0 r">
+            <metadata
+                    id="metadata4577">
+                <rdf:RDF>
+                    <cc:Work
+                            rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title></dc:title>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <defs
+                    id="defs4575"/>
+            <sodipodi:namedview
+                    pagecolor="#ffffff"
+                    bordercolor="#666666"
+                    borderopacity="1"
+                    objecttolerance="10"
+                    gridtolerance="10"
+                    guidetolerance="10"
+                    inkscape:pageopacity="0"
+                    inkscape:pageshadow="2"
+                    inkscape:window-width="1344"
+                    inkscape:window-height="710"
+                    id="namedview4573"
+                    showgrid="false"
+                    inkscape:zoom="0.7573242"
+                    inkscape:cx="-47.959622"
+                    inkscape:cy="591.59751"
+                    inkscape:window-x="9"
+                    inkscape:window-y="27"
+                    inkscape:window-maximized="0"
+                    inkscape:current-layer="svg4571"/>
+            <path
+                    style="fill:#373a3c;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+                    d="M 1.705746,347.20263 329.27946,8.4203564 l 4.45648,-1.815603 5.28176,-1.4854928 7.75757,0.330109 5.28176,2.3107668 5.28175,3.9613156 324.67756,336.201558 0.11672,6.65255 -1.28383,1.75067 -3.15121,1.51725 -2.21751,1.16711 -99.90494,-0.35013 1.63396,306.13393 -177.75142,-0.35013 1.0504,-187.32176 -118.11191,-0.11671 0.81698,188.02203 -177.40129,0.46684 0.11671,-305.31695 -98.154263,-0.23343 -3.734764,-2.21751 -1.517247,-1.63396 c 0,0 -1.4005369,-0.58356 -1.2838259,-3.96819 0.116712,-3.38463 0.4668459,-4.92199 0.4668459,-4.92199 z"
+                    id="path4583"
+                    inkscape:connector-curvature="0"
+                    sodipodi:nodetypes="cccccccccccccccccccccccsc"/>
+        </svg>
+    </a>
+
+    <img class="after_drawing" id="in_helper" src="images/down_arrow.png">
+    <div id="text_near_logo" class="after_drawing not-mobile">
+        <h2>Летние школы</h2>
+        <h2>программирования</h2>
+        <h2 id="last_one">2018</h2>
+    </div>
+    <div id="header_logo_wrapper">
+        <a href="https://goto.msk.ru/camp">
+            <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    id="logo"
+                    version="1.1"
+                    inkscape:version="0.92.0 r"
+                    width="503.46667"
+                    height="340.26666"
+                    sodipodi:docname="logo.svg"
+                    inkscape:export-filename="/root/Downloads/goto.svg.png"
+                    inkscape:export-xdpi="90"
+                    inkscape:export-ydpi="90"
+                    viewBox="0 0 472 319">
+                <metadata
+                        id="metadata3045">
+                    <rdf:RDF>
+                        <cc:Work
+                                rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type
+                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                            <dc:title/>
+                        </cc:Work>
+                    </rdf:RDF>
+                </metadata>
+                <defs
+                        id="defs3043"/>
+                <sodipodi:namedview
+                        pagecolor="#ffffff"
+                        bordercolor="#666666"
+                        borderopacity="1"
+                        objecttolerance="10"
+                        gridtolerance="10"
+                        guidetolerance="10"
+                        inkscape:pageopacity="0"
+                        inkscape:pageshadow="2"
+                        inkscape:window-width="1344"
+                        inkscape:window-height="710"
+                        id="namedview3041"
+                        showgrid="false"
+                        inkscape:zoom="1.4142136"
+                        inkscape:cx="185.78381"
+                        inkscape:cy="138.46418"
+                        inkscape:window-x="9"
+                        inkscape:window-y="27"
+                        inkscape:window-maximized="0"
+                        inkscape:current-layer="svg3039"
+                        inkscape:measure-start="32.3279,65.2324"
+                        inkscape:measure-end="468.161,63.6944"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l14"
+                        width="25.254168"
+                        height="2.907552"
+                        x="181.43124"
+                        y="66.956772"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l13"
+                        width="38.711979"
+                        height="3.6552083"
+                        x="174.03777"
+                        y="76.759377"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l12"
+                        width="3.4070172"
+                        height="78.830986"
+                        x="191.73201"
+                        y="-159.10583"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l15"
+                        width="140.65633"
+                        height="2.2909138"
+                        x="193.96417"
+                        y="117.16447"
+                        ry="0"
+                        style="stroke-width:1.0046258"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l21"
+                        width="3.4648397"
+                        height="80.89315"
+                        x="331.15564"
+                        y="-117.16447"
+                        style="stroke-width:0.9938947"
+                        inkscape:label="#l21"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l16"
+                        width="3.3229043"
+                        height="80.414581"
+                        x="281.28488"
+                        y="36.884377"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l17"
+                        width="3.0545654"
+                        height="142.15425"
+                        x="281.37143"
+                        y="118.92671"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l18"
+                        width="153.5858"
+                        height="2.8195679"
+                        x="281.37143"
+                        y="258.26138"
+                        style="stroke-width:0.9798438"
+                        inkscape:label="#18"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l25"
+                        width="3.4648335"
+                        height="43.356323"
+                        x="331.15564"
+                        y="-160.52078"
+                        style="stroke-width:1.0544796"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l24"
+                        width="104.37209"
+                        height="3.171093"
+                        x="-435.50983"
+                        y="157.36731"
+                        style="stroke-width:1.30944657"
+                        transform="scale(-1,1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l23"
+                        width="2.8713379"
+                        height="124.2485"
+                        x="432.63849"
+                        y="36.289906"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l22"
+                        width="104.27111"
+                        height="2.9910061"
+                        x="331.15564"
+                        y="36.271313"
+                        style="stroke-width:1.16072607"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l8"
+                        width="165.31509"
+                        height="3.3229218"
+                        x="90.217186"
+                        y="156.34323"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l11"
+                        width="3.4890594"
+                        height="105.06878"
+                        x="252.04323"
+                        y="156.34323"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l9"
+                        width="3.5244904"
+                        height="103.85484"
+                        x="150.37804"
+                        y="-260.9635"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l7"
+                        width="3.7690902"
+                        height="43.059231"
+                        x="90.217186"
+                        y="-199.40247"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l6"
+                        width="45.593002"
+                        height="3.2895203"
+                        x="-135.81018"
+                        y="196.11295"
+                        style="stroke-width:0.99488616"
+                        transform="scale(-1,1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l5"
+                        width="2.8195882"
+                        height="64.615562"
+                        x="132.99059"
+                        y="-260.72852"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l4"
+                        width="105.5028"
+                        height="2.8839457"
+                        x="30.307379"
+                        y="257.84457"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l3"
+                        width="2.9768591"
+                        height="224.40488"
+                        x="30.307379"
+                        y="36.323631"
+                        style="stroke-width:1.00854242"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l2"
+                        width="102.48154"
+                        height="3.0746872"
+                        x="-132.78238"
+                        y="36.323631"
+                        transform="scale(-1,1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l1"
+                        width="2.6854546"
+                        height="61.299072"
+                        x="130.28442"
+                        y="-97.622704"
+                        style="stroke-width:2.54346585"
+                        transform="scale(1,-1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l10"
+                        width="105.15425"
+                        height="3.878531"
+                        x="-255.53229"
+                        y="257.53348"
+                        style="stroke-width:1.01679945"
+                        transform="scale(-1,1)"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l19"
+                        width="60.081383"
+                        height="3.2563105"
+                        x="-485.858"
+                        y="111.03612"
+                        transform="matrix(-0.7263686,-0.68730536,0.75530287,-0.6553759,0,0)"
+                        inkscape:transform-center-x="-2.0080374"
+                        inkscape:transform-center-y="1.2641921"
+                        style="stroke-width:0.54062748"/>
+                <rect
+                        stroke="#373a3c"
+                        fill="#373a3c"
+                        id="l20"
+                        width="59.504265"
+                        height="3.2257044"
+                        x="-171.79764"
+                        y="-497.78763"
+                        transform="matrix(-0.69850739,0.71560284,-0.64063175,-0.76784827,0,0)"
+                        inkscape:transform-center-x="-1.2841308"
+                        inkscape:transform-center-y="-1.9701991"
+                        style="stroke-width:0.53549027"/>
+                <rect
+                        style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.01518762;stroke-opacity:1"
+                        id="f2"
+                        width="97.120377"
+                        height="12.89807"
+                        x="154.25607"
+                        y="160.08438"/>
+                <rect
+                        style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-opacity:1"
+                        id="f3"
+                        width="14.101059"
+                        height="96.67984"
+                        x="237.45216"
+                        y="160.37509"/>
+                <rect
+                        style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:0.99802643;stroke-opacity:1"
+                        id="f4"
+                        width="97.283607"
+                        height="12.554064"
+                        x="-251.54645"
+                        y="244.44427"
+                        transform="scale(-1,1)"/>
+                <rect
+                        style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.00154507;stroke-opacity:1"
+                        id="f1"
+                        width="13.246033"
+                        height="96.530945"
+                        x="154.26285"
+                        y="-256.99835"
+                        inkscape:label="#f1"
+                        transform="scale(1,-1)"/>
+                <rect
+                        style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.1043483;stroke-opacity:1"
+                        id="o2"
+                        width="85.080566"
+                        height="13.008534"
+                        x="195.65213"
+                        y="103.61953"
+                        inkscape:label="#o2"/>
+                <rect
+                        style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.98586935;stroke-opacity:1"
+                        id="o1"
+                        width="12.3459"
+                        height="79.35215"
+                        x="284.99423"
+                        y="-116.72614"
+                        inkscape:label="#o1"
+                        transform="scale(1,-1)"/>
+                <rect
+                        style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-opacity:1"
+                        id="o3"
+                        width="12.445862"
+                        height="137.87376"
+                        x="284.91214"
+                        y="119.85478"/>
+                <rect
+                        style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.03497195;stroke-opacity:1"
+                        id="o4"
+                        width="133.78148"
+                        height="12.701582"
+                        x="284.91953"
+                        y="245.01959"
+                        ry="0"
+                        inkscape:label="#o4"/>
+                <path
+                        style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.13236099;stroke-opacity:1"
+                        inkscape:transform-center-x="-0.043321041"
+                        inkscape:transform-center-y="-2.1486765"
+                        d="m 433.65201,258.22424 -15.54659,-0.0478 0.004,-11.86762 1.11489,-1.70548 3.90632,3.70888 z"
+                        id="o5"
+                        inkscape:connector-curvature="0"
+                        sodipodi:nodetypes="cccccc"/>
+                <rect
+                        style="fill:#4bb199;fill-opacity:1;stroke-width:0.94326967"
+                        id="g1"
+                        width="12.859791"
+                        height="118.06738"
+                        x="334.56671"
+                        y="-157.31934"
+                        transform="scale(1,-1)"/>
+                <rect
+                        style="fill:#4bb199;fill-opacity:1;stroke-width:0.93728149"
+                        id="g3"
+                        width="12.69458"
+                        height="118.0902"
+                        x="419.94391"
+                        y="39.259113"/>
+                <rect
+                        style="fill:#4bb199;fill-opacity:1;stroke-width:0.9375"
+                        id="g2"
+                        width="96.136391"
+                        height="12.768278"
+                        x="334.73193"
+                        y="39.251953"/>
+                <rect
+                        style="fill:#4bb199;fill-opacity:1;stroke-width:0.94800091"
+                        id="g4"
+                        width="98.07177"
+                        height="12.798264"
+                        x="-432.63849"
+                        y="144.55106"
+                        transform="scale(-1,1)"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94645733;image-rendering:auto"
+                        id="first_yellow"
+                        width="11.170944"
+                        height="58.465397"
+                        x="119.11347"
+                        y="-97.622711"
+                        transform="scale(1,-1)"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:1.37446415"
+                        id="second_yellow"
+                        width="96.801811"
+                        height="13.744041"
+                        x="-130.28442"
+                        y="39.15731"
+                        transform="scale(-1,1)"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:2.53241658"
+                        id="third_yellow"
+                        width="13.148556"
+                        height="218.69647"
+                        x="33.268436"
+                        y="39.157318"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:1.04482234"
+                        id="five_yellow"
+                        width="99.74662"
+                        height="13.813522"
+                        x="33.268436"
+                        y="244.04027"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94531274"
+                        id="six_yellow"
+                        width="13.308807"
+                        height="58.496136"
+                        x="119.70625"
+                        y="-257.85379"
+                        transform="scale(1,-1)"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:1.85976994"
+                        id="seven_yellow"
+                        width="55.683327"
+                        height="13.412837"
+                        x="-133.01506"
+                        y="199.35767"
+                        transform="scale(-1,1)"/>
+                <rect
+                        style="fill:#f6e76a;fill-opacity:1;stroke-width:1.20284641"
+                        id="eight_yellow"
+                        width="12.865559"
+                        height="43.096901"
+                        x="77.351624"
+                        y="-199.40247"
+                        transform="scale(1,-1)"/>
+                <flowRoot
+xml:space="preserve"
+id="flowRoot127"
+style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:25px;letter-spacing:0px;word-spacing:0px"><flowRegion
+id="flowRegion129"><rect
+id="rect131"
+width="386.11795"
+height="41.240044"
+x="35.503185"
+y="278.11041" /></flowRegion><flowPara
+id="flowPara133"></flowPara></flowRoot>  <text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:41.19104385px;line-height:25.74440193px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:1.0297761"
+x="194.32864"
+y="327.32184"
+id="text3859"
+transform="scale(1.0984278,0.9103921)"><tspan
+sodipodi:role="line"
+x="194.32864"
+y="327.32184"
+id="tspan3857"
+style="stroke-width:1.0297761"><tspan
+x="194.32864"
+y="327.32184"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.42925262px;line-height:46.33992386px;font-family:'Ubuntu';-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:1.0297761"
+id="tspan3855">c    a    m    p</tspan></tspan></text>
+<text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:23.4375px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:0.9375"
+x="123.08036"
+y="293.84488"
+id="text145"><tspan
+sodipodi:role="line"
+id="tspan143"
+x="123.08036"
+y="293.84488"
+style="stroke-width:0.9375">     </tspan></text>
+            </svg>
+        </a>
+    </div>
+
+    <div class="take_part_wrapper after_drawing not-mobile">
+        <a onclick="yaCounter27106058.reachGoal('form'); goog_report_conversion('https://docs.google.com/forms/d/e/1FAIpQLSe5zfirXmWAIPbeYd2c_TRY4UExmNVVlrribEVl0RP0ddquEw/viewform'); return true;"
+           href="https://docs.google.com/forms/d/e/1FAIpQLSe5zfirXmWAIPbeYd2c_TRY4UExmNVVlrribEVl0RP0ddquEw/viewform">
+            Принять участие
+        </a>
+    </div>
+
+    <script src="js/logo_animation.js"></script>
+    <script src="js/programm_choice.js"></script>
+
+</div>
+
+<div class="mobile mobile-header">
+    <h2>Летние школы</h2>
+    <h2>программирования</h2>
+    <h2 id="last_one">2018</h2>
+</div>
+<div class="mobile take_part_wrapper">
+    <a onclick="yaCounter27106058.reachGoal('form'); goog_report_conversion('https://docs.google.com/forms/d/e/1FAIpQLSe5zfirXmWAIPbeYd2c_TRY4UExmNVVlrribEVl0RP0ddquEw/viewform'); return true;"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSe5zfirXmWAIPbeYd2c_TRY4UExmNVVlrribEVl0RP0ddquEw/viewform">
+        Принять участие
+    </a>
+</div>
+
+<!-- Second block =) -->
+<div id="features" class="features green-background">
+    <table>
+        <tr>
+            <td valign="middle">
+                <div class="container green-background">
+                    <div class="row">
+                        <div class="col-md-4 feature">
+                            <img src="images/features/1.png">
+                            <h4>Летняя школа</h4>
+                            <p>В 2018 году пройдут 3 летние школы программирования в формате выездного лагеря в 90 км от
+                                Москвы. Школа базируется на проектном подходе и интенсивном обучении
+                                через практику и прикладные исследования под руководством специалистов из индустрии,
+                                возможности пробовать себя в самых передовых технологических областях,
+                                экспериментировать, а также получить углубленные знания и опыт работы над реальными
+                                задачами.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 feature">
+                            <img src="images/features/2.png">
+                            <h4>Направления</h4>
+                            <p> В программе летних школ представлены самые разные направления: алгоритмы и приложения,
+                                мобильная и веб-разработка, разработка игр, нейроинтерфейсы,
+                                VR/AR, анализ данных и машинное обучение, биоинформатика, распределенные системы,
+                                функциональное программирование, информационная безопасность,
+                                микроконтроллеры и робототехника, а также направление для начинающих.</p>
+
+                        </div>
+
+                        <div class="col-md-4 feature mini">
+                            <img src="images/features/3.png">
+                            <h4>Программа</h4>
+                            <p>В рамках выбранного направления каждый участник получит возможность пройти интенсивный
+                                курсы, реализовать свой проект или
+                                решить задачу от партнеров, а также принять участие в традиционном хакатоне на экваторе,
+                                пройти спецкурсы и по итогам школы представить свой проект и рассказать о нем на Хабре.
+                                Вечером участников лагеря ждут мастер-классы,
+                                встречи с партнерами школы и учеными, а также квесты, спорт, костры и общение.</p>
+                        </div>
+                    </div>
+                    <div class="feature-text white-background">
+                        <p style="padding-bottom: 15px">GoTo помогает участникам: самостоятельно принимать решения,
+                            ставить цели и шаг за шагом
+                            достигать их, развить мотивацию к получению новых знаний, расширить кругозор, осознать свои
+                            возможности и приобрести уверенность для дальнейшего саморазвития, научиться работать в
+                            команде, завести новых друзей и единомышленников.</p>
+
+                        <div class="more_about_us"><a href="/about_us/">Подробнее о нас</a>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+
+    <!--Как принять участие-->
+    <div class="how-to-take_part not-mobile">
+        <svg id="proto"></svg>
+        <div class="whitespace"></div>
+        <h2 class="title" style="margin-top: 2rem">Участие</h2>
+        <div class="texts">
+            <p id="first_step">Школьники 7-11 класса <br> и студенты 1-2 курса</p>
+            <p id="second_step">Подача заявки на участие <br>и тест</p>
+            <!--<p id="third_step">Возможность выиграть <br> гранты в конкурсах</p>-->
+            <p id="third_step"> Стоимость участия<br>52 000 рублей</p>
+            <!--<p id="fourth_step">2 вида: с проживанием<br> и питанием; с обедами</p>-->
+            <!---->
+
+            <p id="fourth_step">Возможность выиграть <br> гранты в конкурсах</p>
+        </div>
+        <div class="whitespace"></div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace"></div>
+        <h2 class="gotochallange_header">Даты проведения</h2>
+        <div class="whitespace"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 style="font-size: 30px; text-align: center;">17-30 июня</h3>
+                <br class="mobile"/>
+            </div>
+
+            <div class="col-md-4">
+                <h3 style="font-size: 30px; text-align: center;">15-28 июля</h3>
+                <br class="mobile"/>
+            </div>
+
+            <div class="col-md-4">
+                <h3 style="font-size: 30px; text-align: center;">12-25 августа</h3>
+                <br class="mobile"/>
+            </div>
+        </div>
+        <div class="whitespace"></div>
+
+    </div>
+
+    <div class="mobile">
+        <h2 class="title take-part-mobile-items-title">Участие</h2>
+
+        <ul class="take-part-mobile-items">
+            <li class="take-part-mobile-items-shar">Школьники 7-11 класса <br> и студенты 1-2 курса</li>
+            <li class="hr"></li>
+            <li class="take-part-mobile-items-shar">Подача заявки на участие <br>и тест</li>
+            <li class="hr"></li>
+            <li class="take-part-mobile-items-shar">Cтоимость участия<br>52 000 рублей</li>
+            <li class="hr"></li>
+            <li class="take-part-mobile-items-shar">Возможность выиграть <br> гранты в конкурсах</li>
+        </ul>
+    </div>
+
+
+    <!-- Смефнявые иконки в оранжевом аде -->
+
+    <div class="whitespace not-mobile"></div>
+
+    <!-- Весёлые покрутяшки -->
+    <div class="krutyashki">
+        <div class="container">
+            <div class="row crugleski">
+                <div onclick="cool(0)" class="up flip-container col-md-4">
+                    <div class="flipper">
+                        <div class="front robot">
+                            <table>
+                                <td valign="middle"><h3>Проекты<br>и исследования</h3></td>
+                            </table>
+                        </div>
+                        <div class="back robot-back">
+                            <table>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="cool(1)" class="up flip-container vertical col-md-4">
+                    <div class="flipper">
+                        <div class="front programm">
+                            <table>
+                                <td valign="middle"><h3>Прикладные задачи<br>и практика</h3></td>
+                            </table>
+                        </div>
+                        <div class="back programm-back">
+                            <table>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="cool(2)" class="up flip-container col-md-4">
+                    <div class="flipper">
+                        <div class="front fp">
+                            <table>
+                                <td valign="middle"><h3>Сообщество<br>единомышленников</h3></td>
+                            </table>
+                        </div>
+                        <div class="back fp-back">
+                            <table>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="ntcool(0)" class="down flip-container vertical col-md-4">
+                    <div class="flipper">
+                        <div class="front ad">
+                            <table>
+                                <td valign="middle"><h3>Междисциплинарность<br>и open source</h3></td>
+                            </table>
+                        </div>
+                        <div class="back ad-back">
+                            <table>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="ntcool(1)" class="down flip-container col-md-4">
+                    <div class="flipper">
+                        <div class="front bio">
+                            <table>
+                                <td valign="middle"><h3>Эксперты<br>из индустрии</h3></td>
+                            </table>
+                        </div>
+                        <div class="back bio-back">
+                            <table>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="ntcool(2)" class="down flip-container vertical col-md-4">
+                    <div class="flipper">
+                        <div class="front blockchain">
+                            <table>
+                                <td valign="middle"><h3>Неформальная<br>обстановка</h3></td>
+                            </table>
+                        </div>
+                        <div class="back blockchain-back">
+                            <table>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <h2 style="margin-top: 7rem;margin-bottom: 4rem;" class="main-header">Направления</h2>
+        <ul>
+            <li class="naprav">
+                <input class="radio" id="naprav1" name="naprav" type="radio">
+                <label class="green" for="naprav1">Прикладное программирование</label>
+
+
+                <p class="content">
+                    В рамках направления прикладного программирования по итогам собеседования и теста
+                    формируется 2 группы.<br>
+                    <span class="br-popalam">Первую группу ждет интенсив погружения в несколько областей:
+                            мобильная и веб-разработка, базы данных, сети, анализ данных и применение алгоритмов в
+                            прикладных задачах. Вся необходимая теория дается индивидуально и непосредственно в процессе
+                            работы над небольшими проектами.</span>
+
+                    <span class="br-popalam">Более опытные участники все время посвятят реализации основного проекта в рамках задачи от
+                            компании-партнера или на основе своей идеи. Каждая команда в первый же день познакомится со
+                            своим куратором и начнет работу по индивидуальному плану на 2 недели, эпизодически
+                            отвлекаясь на спецкурсы, мастер-классы и традиционный хакатон на экваторе.</span><span
+                        class="br-popalam">
+
+                            Помимо ежедневной работы над проектами под руководством кураторов всех участников ждут как
+                            технологические мастер-классы, так и семинары по организации работы в проекте, формированию
+                            ТЗ и исследованию требований от пользователей, тестированию.</span>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav2" name="naprav" type="radio">
+                <label class="orange" for="naprav2">Робототехника и интернет вещей</label>
+
+
+                <p class="content">Участники направления робототехники будут разделены на 2
+                    группы. Опытные ребята возьмутся сразу за проекты на основе своих или предложенных
+                    кураторами идей и пройдут все стадии – от идеи до реализации и презентации результатов.
+                    Проектантов ждет полноценная исследовательская работа по ряду аспектов популярных «железных»
+                    направлений: от связи с использованием BLE и Wi-Fi до решения задач распознавания образов,
+                    от организации пула девайсов в рамках «интернета вещей» до разработки API и протоколов
+                    сопряжения самых разных устройств. Конечно же, не обойдется без 3D-проектирования и
+                    печати. Работа с движками, датчиками и уверенное программирование на C/C++ – подразумеваются
+                    по умолчанию.
+                    <span class="br-popalam">Новичков в работе с железом в первые дни школы ждет интенсивный вводный курс для получения
+                            специфичных направлению базовых навыков и знаний: участники поработают с Arduino, средой
+                            разработки и различными датчиками, микросхемами и сервомоторами. После прохождения КМБ и
+                            «огневого рубежа» — зачета по базовым знаниям — группа присоединится к проектникам и
+                            перейдет к реализации своей задачи в виде умного устройства.
+                            Таким образом, каждый участник направления получит к концу школы результат в виде
+                            законченного устройства, а также пройдет серию мастер-классов по проектной работе,
+                            электронике, промдизайну и 3D-печати, интернету вещей и др.</span>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav3" name="naprav" type="radio">
+                <label class="purple" for="naprav3">Анализ данных и машинное обучениех</label>
+
+
+                <p class="content">
+                    В базовом треке направления участники познакомятся с основными
+                    алгоритмами машинного обучения для задач классификации и
+                    регрессии, методами предобработки данных и оценки качества решений.<span class="br-popalam">В программе: линейные
+                            модели, KNN, дерево решений, случайный лес, градиентный бустинг, ансамбли, матричные
+                            разложения
+                            для понижения размерности, t-SNE, алгоритмы кластеризации, полносвязные, сверточные и
+                            рекуррентные нейронные сети. <br>Практические задания включают в себя применение изученных
+                                алгоритмов к реальным данным и участие в соревнованиях по машинному обучению на Kaggle.</span>
+                    <span class="br-popalam">В проектном треке участники реализуют свои идеи или задачи от компаний-партнеров по
+                            самым разным направлениям: от рекомендательных систем и NLP до компьютерного зрения и других
+                            элементов искусственного интеллекта, а также изучают более узкие темы, например,
+                                reinforcement learning, generative adversarial networks и т.п.</span>
+                    <a href="/ml_program_summer2018">Подробнее</a>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav4" name="naprav" type="radio">
+                <label class="green" for="naprav4">Биоинформатика и вычислительная биология</label>
+
+
+                <p class="content">
+                    Современная биология далека от скучного предмета, который преподают сегодня в школах. С развитием
+                    технологий появилась возможность определять уровни активности генов отдельных клеток, определять
+                    пространственную структуру белков, считывать активность нервных клеток – у биологов появилось
+                    огромное количество данных, что привело к бурному развитию биоинформатики.
+
+                    <span class="br-popalam">Биоинформатика – наука, занимающаяся поиском новых
+                    закономерностей в биологических данных с помощью алгоритмических и статистических методов и
+                    проектированием систем принятия решений на их основе. В рамках школы участники познакомятся
+                    с основными биоинформатическими задачами, получат опыт работы с реальными данными, изучат
+                    результаты современных исследований и их применение в медицине, экологии и сельском
+                    хозяйстве. Желающие смогут реализовать собственный проект под руководством ученых из ведущих
+                    академических и индустриальных лабораторий.</span>
+
+                    <span class="br-popalam">К участию приглашаются все, кто имеет опыт в анализе данных, прикладном программировании или
+                            алгоритмах и хочет выйти за пределы бесконечных веб-сайтов, кредитных скорингов и прочих
+                            таргетингов – попробуйте себя в междисциплинарной области. Биологию знать не обязательно, мы
+                            вам всё покажем и расскажем. Также приглашаем биологов, которые хотят применять
+                            программирование и анализ данных для своих задач.</span>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav5" name="naprav" type="radio">
+                <label class="orange" for="naprav5">Алгоритмы и приложения</label>
+
+
+                <p class="content">
+                    Изучение алгоритмов – основа подготовки специалиста Computer Science.
+                    Разработка любой современной системы состоит из двух частей: бизнес-логика и
+                    инфраструктурный код. Инфраструктурный код приходится писать всегда и вне зависимости от
+                    условной простоты приложения, однако реализация алгоритмической части системы требует более
+                    фундаментальной подготовки.<br>
+                    С другой стороны, знания алгоритмов точно пригодятся для выступлений на олимпиадах по
+                    программированию и успешного поступления в сильнейшие технические университеты, и для
+                    успешного прохождения собеседований в технологические компании, и для развития
+                    соответствующего мышления, которое пригодится в любой области.
+
+                    <span class="br-popalam">На направлении участники в деталях познакомятся с каждым из вышеперчисленных аспектов:
+                            теоретическими знаниями для олимпиад и практическими приложениями алгоритмов в индустрии. Мы
+                            проследим, как одни и те же концепции встречаются в контестах и в практических задачах
+                            поиска информации, оптимизации.</span>
+
+                    <span class="br-popalam">Наиболее опытным участникам будет предложено реализовать проект со значительной
+                            алгоритмической частью.</span>
+
+                    <a href="/alg_program_summer2018">Подробнее</a>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav6" name="naprav" type="radio">
+                <label class="purple" for="naprav6">Распределённые системы и блокчейн</label>
+
+
+                <p class="content">
+                    На направлении распределенных систем участники
+                    смогут пройти интенсивный курс и реализовать проекты в рамках одного из треков:<br>
+                    <span class="br-popalam">Кластеры и enterprise. Изучение подходов, которые используются при реализации
+                            высоконагруженных и надежных систем,
+                            существующими архитектурами и их реализациями. Будут рассмотрены практики анализа и хранения
+                            больших данных (HDFS, MapReduce, Spark)
+                            и написания эффективных масштабируемых сервисов (Docker, Kubernetes, концепции
+                            микросервисов, pub-sub queue).</span><span class="br-popalam">
+
+                            Открытые распределённые системы. Как сделать то, что сможет жить не только в уютном кластере
+                            вашей корпорации, но и в живом интернете?
+                            И не привязано к одному серверу? Как HTML избавился от тегов, работающих только в одном
+                            браузере? Как HTTPS вообще может безопасно работать
+                            для миллиардов пользователей с Windows XP? Как MQTT набрал популярность? И как и зачем на
+                            самом деле децентрализовывают вещи, без ICO и асбеста.
+                            Всё это и менее заезженные кейсы, а также распределение доверия, топологии, шаринг
+                            данных, история подходов к вопросу от двадцатилетней до трёхдневной давности, зачатки
+                                системного мышления и #wefixthenet – ждет участников трека.</span>
+                </p>
+            </li>
+            <li class="naprav">
+                <input class="radio" id="naprav7" name="naprav" type="radio">
+                <label class="green" for="naprav7">Направление<br>для начинающих</label>
+
+
+                <p class="content">
+                    Направление для начинающих предназначено для участников,
+                    которые имеют мало опыта в программировании и не работали над прикладными задачами.
+                    <span class="br-popalam"> Цель
+                            этого курса - заполнить пропасть между изучением программирования и решением реальных
+                            промышленных задач. Многие участники наших школ начинают обучение именно с этого
+                                 направления.</span>
+                    Программа обучения – базовый курс прикладного программирования для начинающих в формате
+                    последовательной реализации небольших проектов на Python. С одной стороны, это позволит
+                    получить много необходимого практического опыта, с другой стороны, любую задачу можно будет
+                    впоследствии развить до большого проекта.
+
+                    <span class="br-popalam"> Занятия проходят в маленькой группе, вся необходимая теория дается индивидуально и
+                            непосредственно в процессе работы над проектом.</span>
+
+                    <span class="br-popalam"> За 2 недели участники поработают с изображениями, звуком, backend-разработкой веб-сервисов,
+                            базами данных и API популярных сервисов( VK, Instagram и др.), знакомятся с базовым анализом
+                            данных, реализуют Telegram-бота, сайт со своей cms, бота для онлайн-игры.</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="whitespace not-mobile"></div>
+    <h2 class="gotochallange_header not-mobile" style="margin-top: 2rem; margin-bottom: 0">Направления</h2>
+    <div class="whitespace not-mobile"></div>
+
+    <div id="trends" class="program_select_wrapper not-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 right_column_select_program_wrapper">
+                    <div class="program_select_col_wrapper program_select_col_checker">
+
+
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_programming" type="radio">
+                            <label for="program_select_programming">Прикладное<br>программирование</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_starter" type="radio">
+                            <label for="program_select_starter">Направление<br>для начинающих</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_ad" type="radio" checked="checked">
+                            <label for="program_select_ad">Анализ данных<br>и машинное обучение</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_algo" type="radio">
+                            <label for="program_select_algo">Алгоритмы<br>и приложения</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_robo" type="radio">
+                            <label for="program_select_robo">Робототехника<br>и интернет вещей</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_blockchain" type="radio">
+                            <label for="program_select_blockchain">Распределённые системы<br>и блокчейн</label>
+                        </div>
+                        <div class="program_select_col_item">
+                            <!--Radio-->
+                            <input name="program_select" id="program_select_bioinf" type="radio">
+                            <label for="program_select_bioinf">Биоинформатика<br>и вычислительная биология</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 left_column_select_program_wrapper">
+                    <div class="program_select_col_wrapper" style="background: white">
+                        <p class="program_select_robo_text">Участники направления робототехники будут разделены на 2
+                            группы. Опытные ребята возьмутся сразу за проекты на основе своих или предложенных
+                            кураторами идей и пройдут все стадии – от идеи до реализации и презентации результатов.
+                            Проектантов ждет полноценная исследовательская работа по ряду аспектов популярных «железных»
+                            направлений: от связи с использованием BLE и Wi-Fi до решения задач распознавания образов,
+                            от организации пула девайсов в рамках «интернета вещей» до разработки API и протоколов
+                            сопряжения самых разных устройств. Конечно же, не обойдется без 3D-проектирования и
+                            печати. Работа с движками, датчиками и уверенное программирование на C/C++ – подразумеваются
+                            по умолчанию.
+                            <span class="br-popalam">Новичков в работе с железом в первые дни школы ждет интенсивный вводный курс для получения
+                            специфичных направлению базовых навыков и знаний: участники поработают с Arduino, средой
+                            разработки и различными датчиками, микросхемами и сервомоторами. После прохождения КМБ и
+                            «огневого рубежа» — зачета по базовым знаниям — группа присоединится к проектникам и
+                            перейдет к реализации своей задачи в виде умного устройства.
+                            Таким образом, каждый участник направления получит к концу школы результат в виде
+                            законченного устройства, а также пройдет серию мастер-классов по проектной работе,
+                            электронике, промдизайну и 3D-печати, интернету вещей и др.</span>
+                        </p>
+
+                        <p class="program_select_programming_text">
+                            В рамках направления прикладного программирования по итогам собеседования и теста
+                            формируется 2 группы.<br>
+                            <span class="br-popalam">Первую группу ждет интенсив погружения в несколько областей:
+                            мобильная и веб-разработка, базы данных, сети, анализ данных и применение алгоритмов в
+                            прикладных задачах. Вся необходимая теория дается индивидуально и непосредственно в процессе
+                            работы над небольшими проектами.</span>
+
+                            <span class="br-popalam">Более опытные участники все время посвятят реализации основного проекта в рамках задачи от
+                            компании-партнера или на основе своей идеи. Каждая команда в первый же день познакомится со
+                            своим куратором и начнет работу по индивидуальному плану на 2 недели, эпизодически
+                            отвлекаясь на спецкурсы, мастер-классы и традиционный хакатон на экваторе.</span><span
+                                class="br-popalam">
+
+                            Помимо ежедневной работы над проектами под руководством кураторов всех участников ждут как
+                            технологические мастер-классы, так и семинары по организации работы в проекте, формированию
+                            ТЗ и исследованию требований от пользователей, тестированию.</span>
+                        </p>
+
+                        <p class="program_select_algo_text">
+                            Изучение алгоритмов – основа подготовки специалиста Computer Science.
+                            Разработка любой современной системы состоит из двух частей: бизнес-логика и
+                            инфраструктурный код. Инфраструктурный код приходится писать всегда и вне зависимости от
+                            условной простоты приложения, однако реализация алгоритмической части системы требует более
+                            фундаментальной подготовки.<br>
+                            С другой стороны, знания алгоритмов точно пригодятся для выступлений на олимпиадах по
+                            программированию и успешного поступления в сильнейшие технические университеты, и для
+                            успешного прохождения собеседований в технологические компании, и для развития
+                            соответствующего мышления, которое пригодится в любой области.
+
+                            <span class="br-popalam">На направлении участники в деталях познакомятся с каждым из вышеперчисленных аспектов:
+                            теоретическими знаниями для олимпиад и практическими приложениями алгоритмов в индустрии. Мы
+                            проследим, как одни и те же концепции встречаются в контестах и в практических задачах
+                            поиска информации, оптимизации.</span>
+
+                            <span class="br-popalam">Наиболее опытным участникам будет предложено реализовать проект со значительной
+                            алгоритмической частью.</span>
+
+                            <a href="/alg_program_summer2018">Подробнее</a>
+                        </p>
+
+
+                        <p class="program_select_ad_text">В базовом треке направления участники познакомятся с основными
+                            алгоритмами машинного обучения для задач классификации и
+                            регрессии, методами предобработки данных и оценки качества решений.<span class="br-popalam">В программе: линейные
+                            модели, KNN, дерево решений, случайный лес, градиентный бустинг, ансамбли, матричные
+                            разложения
+                            для понижения размерности, t-SNE, алгоритмы кластеризации, полносвязные, сверточные и
+                            рекуррентные нейронные сети. <br>Практические задания включают в себя применение изученных
+                                алгоритмов к реальным данным и участие в соревнованиях по машинному обучению на Kaggle.</span>
+                            <span class="br-popalam">В проектном треке участники реализуют свои идеи или задачи от компаний-партнеров по
+                            самым разным направлениям: от рекомендательных систем и NLP до компьютерного зрения и других
+                            элементов искусственного интеллекта, а также изучают более узкие темы, например,
+                                reinforcement learning, generative adversarial networks и т.п.</span>
+                            <a href="/ml_program_summer2018">Подробнее</a>
+                        </p>
+
+                        <p class="program_select_bioinf_text">Современная биология далека от скучного предмета, который
+                            преподают сегодня в школах. С развитием
+                            технологий появилась возможность определять уровни активности генов отдельных клеток,
+                            определять
+                            пространственную структуру белков, считывать активность нервных клеток – у биологов
+                            появилось
+                            огромное количество данных, что привело к бурному развитию биоинформатики.
+
+                            <span class="br-popalam">Биоинформатика – наука, занимающаяся поиском новых
+                    закономерностей в биологических данных с помощью алгоритмических и статистических методов и
+                    проектированием систем принятия решений на их основе. В рамках школы участники познакомятся
+                    с основными биоинформатическими задачами, получат опыт работы с реальными данными, изучат
+                    результаты современных исследований и их применение в медицине, экологии и сельском
+                    хозяйстве. Желающие смогут реализовать собственный проект под руководством ученых из ведущих
+                    академических и индустриальных лабораторий.</span>
+
+                            <span class="br-popalam">К участию приглашаются все, кто имеет опыт в анализе данных, прикладном программировании или
+                            алгоритмах и хочет выйти за пределы бесконечных веб-сайтов, кредитных скорингов и прочих
+                            таргетингов – попробуйте себя в междисциплинарной области. Биологию знать не обязательно, мы
+                            вам всё покажем и расскажем. Также приглашаем биологов, которые хотят применять
+                            программирование и анализ данных для своих задач.</span>
+                        </p>
+
+                        <p class="program_select_blockchain_text">На направлении распределенных систем участники
+                            смогут пройти интенсивный курс и реализовать проекты в рамках одного из треков:<br>
+                            <span class="br-popalam">Кластеры и enterprise. Изучение подходов, которые используются при реализации
+                            высоконагруженных и надежных систем,
+                            существующими архитектурами и их реализациями. Будут рассмотрены практики анализа и хранения
+                            больших данных (HDFS, MapReduce, Spark)
+                            и написания эффективных масштабируемых сервисов (Docker, Kubernetes, концепции
+                            микросервисов, pub-sub queue).</span><span class="br-popalam">
+
+                            Открытые распределённые системы. Как сделать то, что сможет жить не только в уютном кластере
+                            вашей корпорации, но и в живом интернете?
+                            И не привязано к одному серверу? Как HTML избавился от тегов, работающих только в одном
+                            браузере? Как HTTPS вообще может безопасно работать
+                            для миллиардов пользователей с Windows XP? Как MQTT набрал популярность? И как и зачем на
+                            самом деле децентрализовывают вещи, без ICO и асбеста.
+                            Всё это и менее заезженные кейсы, а также распределение доверия, топологии, шаринг
+                            данных, история подходов к вопросу от двадцатилетней до трёхдневной давности, зачатки
+                                системного мышления и #wefixthenet – ждет участников трека.</span>
+
+                        </p>
+                        <p class="program_select_starter_text">
+                            Направление для начинающих предназначено для участников,
+                            которые имеют мало опыта в программировании и не работали над прикладными задачами.
+                            <span class="br-popalam"> Цель
+                            этого курса - заполнить пропасть между изучением программирования и решением реальных
+                            промышленных задач. Многие участники наших школ начинают обучение именно с этого
+                                 направления.</span>
+                            Программа обучения – базовый курс прикладного программирования для начинающих в формате
+                            последовательной реализации небольших проектов на Python. С одной стороны, это позволит
+                            получить много необходимого практического опыта, с другой стороны, любую задачу можно будет
+                            впоследствии развить до большого проекта.
+
+                            <span class="br-popalam"> Занятия проходят в маленькой группе, вся необходимая теория дается индивидуально и
+                            непосредственно в процессе работы над проектом.</span>
+
+                            <span class="br-popalam"> За 2 недели участники поработают с изображениями, звуком, backend-разработкой веб-сервисов,
+                            базами данных и API популярных сервисов( VK, Instagram и др.), знакомятся с базовым анализом
+                            данных, реализуют Telegram-бота, сайт со своей cms, бота для онлайн-игры.</span>
+
+                            <a href="/pp_program_summer2018">Подробнее</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="all_projects">
+        <a onclick="window.location = '/projects/'">Примеры проектов</a>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <!-- Если вы -->
+    <div id="if_you" class="not-mobile">
+        <canvas id="wave_canvas">
+
+        </canvas>
+        <div id="grants_info" class="container wave_conteiner">
+            <div class="left">
+                <h2>Скидки</h2>
+                <p>
+                    Бессрочные гранты на скидки в размере 20% на участие в школе за успешную реализацию проекта, работа
+                    над которым была
+                    начата на одной из предыдущих школ.
+                    Для получения гранта необходимо завершить работу над проектом по утвержденному куратором плану и
+                    опубликовать результаты на Хабре.
+                </p>
+
+
+            </div>
+
+            <div class="whitespace_wave"></div>
+
+            <div class="right">
+                <h2>Бесплатное обучение</h2>
+                <p>
+                    Предложите идею проекта для нашей школы и сообщества вокруг, реализуйте ее и получите грант на
+                    бесплатное обучение. Критерии оценки проектов: работоспособность прототипа, техническая сложность,
+                    масштабируемость и полезность.
+                    Если вы полны сил и решимости, мы предоставим куратора для проработки идеи и плана.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="container wave_more">
+            <div>
+                <a href="/challenge_summer2018">Участвовать</a>
+            </div>
+            <div class="whitespace_wave"></div>
+            <div>
+                <a href="/challenge_summer2018">Участвовать</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="whitespace not-mobile"></div>
+    <!-- Наши препы -->
+    <div class="prepi">
+        <table>
+            <tr>
+                <td valign="middle">
+                    <h2 class="main-header">Преподаватели и гости</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p1.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Алексей Перепёлкин</h3>
+                                            <p>Руководитель направления робототехники GoTo и ЛИОТ МФТИ, автор
+                                                онлайн-курса на
+                                                Coursera "Строим роботов на Arduino", автор и судья номинации "Hello,
+                                                Robot!
+                                                Arduino" Робофеста, организатор Роболабораторий от КРОК.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p2.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Иван Бибилов</h3>
+                                            <p>
+                                                Руководитель направления прикладного программирования GoTo, куратор
+                                                образовательных программ Яндекса, преподаватель различных курсов в
+                                                университетах
+                                                и школы анализа данных Яндекса.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p3.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Надежда Янушкевич</h3>
+                                            <p>Руководитель направления поддержки и развития школьного IT-образования
+                                                компании
+                                                КРОК, специалист по корпоративной культуре, организатор соревнований,
+                                                хакатонов
+                                                и школ.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p7.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Александр Панин</h3>
+                                            <p>
+                                                Преподаватель направления анализа данных в GoTo.
+                                                Специалист в области машинного обучения, разработчик проектов
+                                                CERN-Яндекс,
+                                                преподаватель ФКН ВШЭ и школы анализа данных Яндекса, ЛЭШ.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p9.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Алексей Саватеев</h3>
+                                            <p>Доктор физико-математических наук, профессор МФТИ. Работает ведущим
+                                                научным
+                                                сотрудником в РЭШ и ЦЭМИ. Занимается исследованиями в Яндексе.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p12.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Александр Петров</h3>
+                                            <p>
+                                                Преподаватель направления анализа данных в GoTo.
+                                                Специалист в области машинного обучения и рекомендательных систем,
+                                                технический
+                                                директор E-contenta, руководил R&D-отделом Data-Centric Alliance,
+                                                работал в
+                                                Tinkoff, Яндекс и Mail.Ru.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p10.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Николай Кутрухин</h3>
+                                            <p>
+                                                Преподаватель направления робототехники в GoTo, специалист в области
+                                                программной
+                                                инженерии, координатор МКШ, руководитель робототехнических и олимпиадных
+                                                кружков.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/pavel.png"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Павел Куликов</h3>
+                                            <p>Преподаватель направления прикладного программирования в GoTo,
+                                                инженер-программист с
+                                                10-летним стажем, full stack разработчик, фрилансер.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p14.jpeg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Ростислав Бородин</h3>
+                                            <p> Преподаватель направления
+                                                прикладного программирования в GoTo и Политехническом музее.
+                                                Выпускник ФКН НИУ ВШЭ, профессиональный full-stack веб-разработчик.
+                                                Специалист по разработке медицинских сервисов. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="http://bioinformaticsinstitute.ru/sites/default/files/shchukina_irina.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Ирина Щукина</h3>
+                                            <p>Преподаватель направления биоинформатики в GoTo.
+                                                Выпускник матмеха СПбАУ. Исследователь в Оксфордском университете.
+                                                Преподаватель в Институте Биоинформатики.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="http://bioinformaticsinstitute.ru/sites/default/files/prodanov.timofey.png"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Тимофей Проданов</h3>
+                                            <p> Преподаватель направления биоинформатики в GoTo.
+                                                Выпускник матмеха СПбАУ. Исследователь в Центре Алгоритмической
+                                                Биотехнологии СПбГУ, преподаватель в Институте Биоинформатики.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p-1.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Михаил Диченко</h3>
+                                            <p>Преподаватель направления робототехники в GoTo.
+                                                Выпускник МГПУ, руководитель инженерного профиля школы ОРТ,
+                                                преподаватель
+                                                лицея 1535, руководитель робототехнических кружков в Москве. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p-2.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Алёна Ильина</h3>
+                                            <p>Предприниматель, основатель школы GoTo, организатор TEDxSadovoeRing,
+                                                серии
+                                                научных школ по робототехнике и искусственному интеллекту RAIC для
+                                                молодых
+                                                специалистов и других образовательных проектов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p20.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Михаил Фуников</h3>
+                                            <p> Android-разработчик (Middle+) в e-Legion. Сфера
+                                                профессиональных интересов —построение наиболее простой и гибкой
+                                                архитектуры
+                                                приложения.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p22.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Сергей Юдин</h3>
+                                            <p> Преподаватель направления анализа данных в GoTo. Аспирант МехМата МГУ,
+                                                специалист в области машинного обучения и математической статистики.
+                                                Работает аналитиком-разработчиком в Поиске Яндекса.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p24.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Виктор Петухов</h3>
+                                            <p>Закончил магистратуру СПбПУ по направлению Биоинформатика. За время
+                                                обучения
+                                                проходил стажировку в Harvard Medical School. Специализируется в области
+                                                статистиески и машинного обучения.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/p25.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Анастасия Иванова-Московская</h3>
+                                            <p>Aспирант и сотрудник факультета журналистики МГУ им. М. В. Ломоносова,
+                                                координатор школьного отделения мастерской "Школа "Наука и журналистка"
+                                                проекта "Летняя школа".
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 prep hid">
+                                    <div class="row">
+                                        <div class="col-md-4 xs-force-center">
+                                            <noindex><img src="images/prepi/file1509172840105.jpg"></noindex>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3>Дмитрий Волков</h3>
+                                            <p>
+                                                Хаскелль-разработчик, энтузиаст формальной верификации и Лампортист.
+                                                Аналитик данных и любитель абстрактного карри. Руководитель направлений
+                                                функциональное программирование и распределённые системы.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-gosti">
+                        <a onclick="toggle()">Просмотреть всех</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Место проведения -->
+    <div>
+        <div class="map-title">
+            <h2 class="main-header">Место проведения</h2>
+        </div>
+        <div id="map"></div>
+    </div>
+    <div class="slider not-mobile">
+
+        <div class="slide">
+            <img src="images/slides/0007.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10004.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0008.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10006.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0009.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0011.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0012.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0014.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0015.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0016.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0021.jpg">
+        </div>
+
+
+        <div class="slide">
+            <img src="images/slides/10003.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0023.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0024.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10005.jpg">
+        </div>
+
+
+        <div class="slide">
+            <img src="images/slides/0025.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0026.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10001.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0027.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0028.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0031.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0032.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/0033.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10000.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="images/slides/10007.jpg">
+        </div>
+
+
+        <div class="slide">
+            <img src="images/slides/10009.jpg">
+        </div>
+    </div>
+
+    <div class="comments-wrapper not-mobile">
+        <div class="map-title">
+            <h2 style="color: white" class="main-header">Отзывы участников</h2>
+        </div>
+        <div class="container">
+            <div class="comments">
+                <div class="comment">
+                    <img src="images/comments/andreeva.jpg">
+                    <h3>Андреева Мария</h3>
+                    <h2>Школа №179, г. Москва</h2>
+                    <p>В GoTo какая-то особенная атмосфера в которой даже летом хочется работать и узнавать новое) Я
+                        была на нескольких сменах, но пока что попробовала только два направления: робототехнику и
+                        анализ данных. На первом мы делали много разных проектов, начиная рисующим роботом, заканчивая
+                        умной гантелей. Потом я решила что-нибудь поменять и пошла на направление АДа. Там пока что было
+                        только обучение, тк это довольно сложная тема и в ней много чего надо изучить, чтобы делать
+                        какие-то стоящие проекты. Очень классно объясняют, если что-то непонятно разбирают по мелочам.
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/zajceva.jpg">
+                    <h3>Зайцева Татьяна</h3>
+                    <h2>Мехмат МГУ, г. Москва</h2>
+                    <p> Поездка в GoTo - отличная возможность совместить активный отдых и попробовать себя в интересных
+                        проектах, а также познакомиться с ребятами со всей России, у которых горят глаза от того же, что
+                        и у тебя. В свою первую смену мы в команде реализовали управляемую оператором тележку с камерой,
+                        способную вращаться почти как угодно и так помогать оператору снимать то, что нужно, под
+                        правильным углом и освещением, а во вторую я сделала робота, запоминающего свою исходную
+                        настроенную траекторию, и потом ездящего по ней даже после выключения питания. Как оказалось,
+                        можно всего за одну смену сделать полностью задачу, в чём нам помогали отзывчивые и опытные
+                        преподаватели. Мне всё понравилось, а знания с этих смен я использую до сих пор.
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/gridasov.jpg">
+                    <h3>Гридасов Илья</h3>
+                    <h2>МФТИ, г. Магнитогорск</h2>
+                    <p> Мне очень понравилось в GoTo. Здесь я написал первое работающее приложение на android.
+                        Благодаря данной школе я получил полезный опыт написания проекта, причём делали его я с моим
+                        напарником почти самостоятельно, обсуждая идеи и технологии с куратором. Мы кодили приложение,
+                        которое выдавало тебе интересный факт, со встроенной рекомендательной системой. Работу мы
+                        разделили примерно так, что я занимался back-end-ом и рекомендательной системой, а напарник
+                        больше front-end-ом. В итоге, не без трудностей и неудач, мы реализовали работающее готовое
+                        приложение, которое можно было выпускать в production, ну почти. Хочется отметить, что здесь
+                        также было время на активный отдых, игры в волейбол, футбол многое другое<span
+                                class="second_long">.</span> <a class="more"
+                                                                onclick="$(this).toggle(); $('.second_long').css('display', 'inline');">...</a>
+                        <span
+                                class="second_long"> А также несмотря на
+                        достаточную погруженность людей в свои проекты, в воздухе царила атмосфера семьи, все обсуждали
+                        свои проекты с другими, предлагали новые идеи, а также вместе наслаждались играми и общением по
+                        душам, которому значительно способствовали очень сердечные свечки по вечерам. Таким образом,
+                        жизнь в GoTo Camp насыщает человека как мыслями, идеями, новыми технологиями, но и эмоциями,
+                            конечно, позитивными!</span>
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/popkova.jpg">
+                    <h3>Екатерина Попкова</h3>
+                    <h2>Биофак МГУ, г. Москва</h2>
+                    <p>Весення смена в лагере «GoTo» на специализации «биоинформатика» была для меня очень полезной и
+                        интересной. За неделю мы изучили и самостоятельно реализовали несколько базовых алгоритмов,
+                        применяющихся в биоинформатике: алгоритм Нидлмана-Вунша для выравнивания последовательностей,
+                        алгоритм восстановления вторичной структуры РНК, научились с помощью статистического теста
+                        выделять гены, изменяющие уровень экспрессии при данных условиях, относить человека к той или
+                        иной национальности исходя только из его генетического кода<span class="first_long">.</span> <a
+                                class="more"
+                                onclick="$(this).toggle(); $('.first_long').css('display', 'inline');">...</a> <span
+                                class="first_long">Мне показалось особенно интересным,
+                        что после выполнения задания мы могли опробовать написанный алгоритм на реальных биологических
+                        данных. Параллельно мне удалось сделать проект по теме: «Оптимизация поиска сайтов
+                        РНК-редактирования в данных ICE-seq». Хотя это и был достаточно небольшой однодневный проект,
+                        было здорово попробовать себя в реальной, а не учебной, задаче, которая могла бы стоять перед
+                        исследователем-биоинформатиком.</span></p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/kabo.jpg">
+                    <h3>Евгений Кабо</h3>
+                    <h2>Разработчик, г. Минск</h2>
+                    <p>Свою первую заявку подал за 30 минут до окончания срока. И никогда об этом не жалел. В этом месте
+                        прекрасно всё: от круга общения, состоящего из людей который ты вряд ли забудешь (преподаватели,
+                        вожатые, организаторы, гости, участники), до практической-полезной части, как среди
+                        программной стороны (прикладное программирование, анализ данных, биоинформатика), так среди и
+                        аппаратной(робототехника). Я
+                        был по обе стороны баррикад и знаю о чём говорю. Если вы ещё сомневаетесь, не сомневайтесь.
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/dimaantonov.jpg">
+                    <h3>Дмитрий Антонов</h3>
+                    <h2>Школа №806, г. Москва</h2>
+                    <p>Образовательная программа в рамках GoTo camp очень хорошая. За время поездок в лагерь я
+                        реализовал различные проекты: определение болезни по ДНК, определение изображенного на
+                        фотографии, определение человека по голосу. Это было бы невозможно, если бы не
+                        преподаватели-профессионалы, которые с радостью делятся своим опытом и знаниями. Если вам
+                        хочется освоить прикладное программирование, анализ данных и машинное обучение, биоинформатику,
+                        робототехнику и получить опыт проектной работы, то этот лагерь для вас.
+                    </p>
+                </div>
+
+
+                <div class="comment">
+                    <img src="images/comments/kurilev.jpg">
+                    <h3>Александр Курылёв</h3>
+                    <h2>Школа №1357, г. Москва</h2>
+                    <p> В GoTo большое количество времени отводится образованию. Чаще всего бывает по три-четыре пары за
+                        день. В это время можно либо заниматься заранее выбранным проектом, с которым тебе будут
+                        помогать преподаватели, либо учиться.
+                        На протяжении всех своих смен в лагере я реализовал 3 проекта по робототехнике, 1 учебный проект
+                        по анализу данных и несколько мини-проектов по программированию.
+                        Во всех сменах преподаватели уделяли должное внимание каждому из участников и помогали
+                        разбираться с той или иной проблемой. За одну-две недели реально подтянуть свои навыки в
+                        программировании или научиться всему с нуля.
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/gleb.jpg">
+                    <h3>Статкевич Глеб</h3>
+                    <h2>Гимназия №5, г. Чебоксары</h2>
+                    <p>В апреле мне удалось побывать на занятиях весенней школы GoTo в Иннополисе. В самом
+                        городе я уже не первый раз, он великолепен, но особенно меня впечатлили занятия КМБ под
+                        руководством мастера Ростислава! Хочу выразить ему признательность и уважение за то, что в
+                        столь краткое время он, как истинный знаток своего дела, сумел запихнуть в наши черепные
+                        коробки массу полезной инфы и раскрутил наши 2-х ядерные процессоры до 4-х! Мне очень понравился
+                        стиль его обучения. Занятия были очень интенсивны и информативны! Собираюсь возобновить их
+                        летом!</p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/svatoslav.jpg">
+                    <h3>Пушкарев Святослав</h3>
+                    <h2>Гимназия №31, г. Курган</h2>
+                    <p> На каждой смене GoTo Camp представлено большое количество разнообразных направлений, а участие в
+                        обучении принимает большое количество IT специалистов. Образовательный процесс увлекателен,
+                        состоит из интересных лекций и реализации различных идей учеников лагеря. Каждый, приехав в этот
+                        лагерь увозит с собой не только полученные знания, но и "жизнеспособный" проект.
+                        В GoTo Camp я принимал участие в реализации "LinuxBot","SmartFluffyBrick" и "Определитель
+                        номеров". Два из них до сих пор развиваются, что является показателем профессионального подхода
+                        всей команды GoTo к обучению.</p>
+                </div>
+
+                <div class="comment">
+                    <img src="images/comments/sere.jpg">
+                    <h3>Сергей Филиппов</h3>
+                    <h2>Экстернат Фоксфорд, г. Санкт-Петербург</h2>
+                    <p>Я очень благодарен лагерю GoTo. В нем я нашел множество интересных людей. Получил огромнейшую
+                        базу знаний в различных областях и закрепил эти знания различными проектами. Такими как, Мишка
+                        на дистанционном управлении через telegram для общения с детьми на расстоянии, манипулятор для
+                        автономной игры в шашки, интеллектуальную гантелю от Intel и многое другое.</p>
+                </div>
+
+
+                <div class="comment">
+                    <img src="images/comments/tsiplenkov.jpg">
+                    <h3>Цыпленков Севастьян</h3>
+                    <h2>Гимназия №5, г. Чебоксары</h2>
+                    <p>Ростислав отлично объясняет материал! Всегда готов помочь, если что-то не получается. С ним
+                        интересно. За эту неделю мы с ним можно сказать подружились. Хоть в нашей группе были люди,
+                        которые были продвинуты в этом направлении, благодаря Ростиславу новички не уступали по
+                        качеству продукта и иногда наоборот превосходно делали поставленную задачу.</p>
+                </div>
+
+
+                <div class="comment">
+                    <img src="images/comments/maxim.jpg">
+                    <h3>Максим Манайнен</h3>
+                    <h2>Школа РИД, г. Санкт-Петербург</h2>
+                    <p> Поездки в GoTo стали одними из самых ярких моментов моей жизни, ведь это не просто лагерь с
+                        воспитательницами и няничками, а хаб единомышленников, по совместительству являющийся детским
+                        лагерем. Это одно из тех мест, где людям всё равно какого вы возраста, на каком месте в рейтинге
+                        российских школ стоит ваша, или какая у вас была оценка по математике в третьей четверти второго
+                        класса. Всё что важно здесь - это желание и способность к работе и учёбе, а так же ваш характер
+                        и мировоззрение.
+                        Моей первой поездкой в GoTo была поездка на смену в самый прекрасный город России -
+                        Санкт-Петербург. Я поехал на направление "Аналих данных", о чём нисколько не пожалел<span
+                                class="third_long">.</span> <a class="more"
+                                                               onclick="$(this).toggle(); $('.third_long').css('display', 'inline');">...</a>
+                        <span
+                                class="third_long"> Тогда я уже какое-то время изучал техники Data Science'а, но дальше решения Титаника линейной
+                        регрессией, или каким-нибудь Random Forest'ом дело не зашло, однако эта смена дала мне так
+                        нужный буст.
+                        Дни в лагере состояли из лекций, времени работы над проектом и вечерних активити. Лекции были
+                        очень интересными, нам рассказывали о всём от байесовских сетей до использования машинного
+                        обучения в продакшене. Правда, для части материала мне на тот момент не хватало знаний
+                        математики, так что если вы не хотите попасть в такую же ситуацию, добавьте в свой график,
+                        где-то между выполнением домашнего задания по литературе и изучением Scala, прохождение пары
+                        курсов по линалу и теор.веру, вам это очень поможет.
+                        Проектом над которым работал я и один мой товарищ была рекоммендательная система фильмов,
+                        работающая на данных со страницы пользователя в Вк. Делалось это для решения проблемы, так
+                        называемого, "холодного старта", когда система еще ничего не знает о пользовтеле. Многие
+                        реальные рекоммендательные системы используют для этого кластерные методы, чтобы находить
+                        похожих юзеров по данным учетки, а потом рекоммендовать понравившиеся им фильмы пользователю, мы
+                        же попробовали два различных варианта: рекоммендовать фильмы в зависимости от того, что
+                        пользователь указал в графе "любимые фильмы" и в зависимости от групп, в которых он состоит. С
+                        алгоритмической точки зрения и с точки зрения анализа данных эта задача не является слишком
+                        сложной, однако на тот момент для меня было триумфом получить первые рекоммендации для себя и
+                        своих друзей.
+                        Так же стоит отметить экскурсии, проходвишие время от времени после занятий. Мы съездили в такие
+                        компании, как "Biocad" и "Parseq labs", эти компании занимаются анализом генома для различых
+                        целей. В компаниях нам рассказали о проблемах, над которыми они работают, какие проекты начнут в
+                        скором времени, всё это познакомило меня с новым для меня миром биоинформатики, область, которой
+                        я думаю заниматься в университете, и надеюсь после него.
+                        Ну и конечно вечернии посиделки на кухне хостела и прогулки по вечернему Питеру, которые были
+                        приятным завершением наших дней. Здесь собралась настолько разнящаяся, но в то же время очень
+                        близкая по духу компания, что разговоры и споры с этими людьми позволят вам по новому взглянуть
+                        на волнующие вас темы. Здесь каждый является экспертом в своей области, будь то математика,
+                        шахматы, или западная философия: темы для разговоров здесь не иссякнут никогда.
+                        GoTo - это то место, где вы научитесь работать, познакомитесь с единомышленниками и хорошо
+                        проеведете время. Так что если у вас есть выбор между ним и лагерем "Юный юрист", считайте выбор
+                            уже сделан.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace"></div>
+        <h2 class="title">Часто задаваемые вопросы</h2>
+        <div class="faq">
+            <form>
+
+                <div class="faq-item" id="first_faq_item">
+
+                    <input class="faq-radio" id="faq-checkbox1" name="faq-question" type="radio">
+                    <label for="faq-checkbox1" class="faq-question">Чем занимаются участники?</label>
+
+                    <div class="faq-answer">Каждый участник выбирает одно из направлений школы: алгоритмы и приложения,
+                        мобильная и
+                        веб-разработка, разработка игр, нейроинтерфейсы, VR/AR, анализ данных и машинное обучение,
+                        биоинформатика, распределенные системы, функциональное программирование, информационная
+                        безопасность,
+                        микроконтроллеры и робототехника, а также курс прикладного программирования для начинающих в
+                        виде интенсива из
+                        мини-проектов.<br>
+
+
+                        В рамках каждого направления есть возможность пройти интенсивы разной сложности, подготовиться к
+                        конкурсам и олимпиадам, реализовать проекты на основе своих идей или задач от партнеров под
+                        руководством
+                        опытных кураторов. По окончанию школы проходит общая презентация проектов и экзамен с
+                        последующей
+                        индивидуальной обратной связью от кураторов и обсуждением возможностей для дальнейшего развития
+                        и
+                        сотрудничества с партнерами. Примеры проектов можно найти в разделе "О нас пишут" и в блоге на
+                        Хабре. <br>
+
+                        Несмотря на интенсивную образовательную программу, ключевые ценности школы – благоприятная
+                        открытая среда
+                        и доверительные отношения, а также сообщество единомышленников. Созданные
+                        условия и атмосфера помогают не
+                        бояться ставить смелые цели и проявлять инициативу, учиться осознанно принимать решения и быть
+                        самим собой, расширить кругозор.
+
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox2" name="faq-question" type="radio">
+                    <label for="faq-checkbox2" class="faq-question">Чем отличается школа от других лагерей и
+                        программ?</label>
+
+                    <div class="faq-answer">Наша школа базируется на проектном подходе и интенсивном обучении через
+                        практику под руководством
+                        специалистов из индустрии, возможности пробовать себя в самых передовых технологических областях
+                        не только на уровне ликбеза,
+                        как в большинстве мест, экспериментировать и реализовывать свои идеи, а также из практики
+                        осознанно прийти к изучению теории.
+                        Основные принципы наших программ: решение реальных задач, реализация своих идей, индивидуальный
+                        подход и обучение без лишних формальностей и жестких ограничений на возраст и уровень знаний.
+                        Современные технологии
+                        довольно быстро развиваются, университеты и школы уже давно не успевают обновлять программы,
+                        поэтому не менее актуально формировать сильный теоретический фундамент, но и универсальные
+                        компетенции:
+                        критическое мышление, принятие решений, решение проблем, умение учиться и др.
+                        Помимо вышесказанного, стоит отметить еще две не менее важные составляющие – ламповая атмосфера
+                        и формирование устойчивых горизонтальных связей без расслоения на школьников, студентов,
+                        экспертов. Вне школ ученики и студенты реализуют
+                        совместные проекты, делятся знаниями и опытом, выигрывают конкурсы и хакатоны, возвращаются в
+                        школу в качестве кураторов и организаторов.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox61" name="faq-question" type="radio">
+                    <label for="faq-checkbox61" class="faq-question">Кто преподает и курирует проекты?</label>
+
+                    <div class="faq-answer">
+                        Преподаватели и кураторы школы — разработчики, исследователи, менеджеры, дизайнеры и с
+                        опытом в
+                        IT и смежных областях. Работа в маленьких командах и группах в дружеской неформальной
+                        обстановке
+                        позволяет подойти к каждому участнику индивидуально, вдохновить и помочь с осознанием своих
+                        возможностей и интересов, приобретением уверенности для дальнейшего саморазвития.
+                        Организаторы и кураторы-вожатые ежедневно формируют программу, следят за физическим и
+                        эмоциональным состоянием участников и их безопасностью, помогают реализовать проекты, найти
+                        единомышленников и расширить свои интересы, проводят внеучебные мероприятия и спецкурсы.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox6" name="faq-question" type="radio">
+                    <label for="faq-checkbox6" class="faq-question">Сколько школ вы уже провели? Что есть помимо
+                        школ? </label>
+
+                    <div class="faq-answer">
+                        Наша история началась с участия в проведении школы ABBYY и Яндекса и последующего старта в
+                        январе 2015 года школ GoToCamp с новыми партнерами. На сегодняшний день состоялось уже
+                        больше 20
+                        школ на различных площадках, включая университеты и офисы компаний-партнеров: Яндекс, МФТИ,
+                        ФКН
+                        ВШЭ, ИТМО, Иннополис, МАрхИ, Технопарк Ингрия, АСИ и др. В организации школы участвуют
+                        преподаватели университетов, разработчики, исследователи, менеджеры проектов и
+                        предприниматели.
+
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox3" name="faq-question" type="radio">
+                    <label for="faq-checkbox3" class="faq-question">Как принять участие? Как устроен отбор?</label>
+
+                    <div class="faq-answer">
+                        Каждому желающему необходимо самостоятельно подать заявку. В анкете мы просим подробно ответить
+                        на вопросы, особенно если вы не принимали участие ранее. Важно развернуто ответить на все
+                        вопросы, рассказать о вашей мотивации и идеях.<br>
+
+                        На основе этих ответов мы в течение всего отбора каждые 2 недели формируем список
+                        рекомендованных к зачислению и высылаем вам приглашение на контактный email с дальнейшими
+                        инструкциями. Распределение по уровням и направлениям происходит по итогам диагностического
+                        теста незадолго до школы и очного собеседования с преподавателями в первый день. При
+                        необходимости можно сменить направление в первые дни, получив согласие кураторов.
+
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox5" name="faq-question" type="radio">
+                    <label for="faq-checkbox5" class="faq-question">Сколько обычно участников и кураторов?</label>
+
+                    <div class="faq-answer">
+                        Около 50-60 участников, 15-20 кураторов и организаторов.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox60" name="faq-question" type="radio">
+                    <label for="faq-checkbox60" class="faq-question">Как устроен типичный день?</label>
+
+                    <div class="faq-answer">
+                        Каждый день устроен немного по-разному, общая схема такова:
+                        <br><br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>8:30</td>
+                                <td>Подъем и зарядка</td>
+                            </tr>
+                            <tr>
+                                <td>9:00</td>
+                                <td>Завтрак</td>
+                            </tr>
+                            <tr>
+                                <td>10:00</td>
+                                <td>Первая пара</td>
+                            </tr>
+                            <tr>
+                                <td>10:30</td>
+                                <td>Перерыв</td>
+                            </tr>
+                            <tr>
+                                <td>12:00</td>
+                                <td>Вторая пара</td>
+                            </tr>
+                            <tr>
+                                <td>13:30</td>
+                                <td>Обед и свободное время</td>
+                            </tr>
+                            <tr>
+                                <td>15:00</td>
+                                <td>Третья пара</td>
+                            </tr>
+                            <tr>
+                                <td>16:30</td>
+                                <td>Спорт, прогулки</td>
+                            </tr>
+                            <tr>
+                                <td>17:30</td>
+                                <td>Мастер-класс или гостевая лекция</td>
+                            </tr>
+                            <tr>
+                                <td>19:00</td>
+                                <td>Ужин</td>
+                            </tr>
+                            <tr>
+                                <td>20:00</td>
+                                <td>Вечернее мероприятие</td>
+                            </tr>
+                            <tr>
+                                <td>21:30</td>
+                                <td>Костер, вечерние чаепития, прогулки и беседы</td>
+                            </tr>
+                            <tr>
+                                <td>00:00</td>
+                                <td>Расходимся по домам, отдых и сон</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox7" name="faq-question" type="radio">
+                    <label for="faq-checkbox7" class="faq-question">Есть ли у вас отряды? Формируются только учебные
+                        группы по направлениям? </label>
+
+                    <div class="faq-answer">
+                        Необходимости в отрядах у нас нет, школа проводится в довольно семейном и ламповом формате.
+                        Ребята обучаются и работают на своих направлениях с разбиением на группы по уровню знаний и
+                        опыта. На всех остальных мероприятиях и активностях в течение дня участники неоднократно
+                        перемешиваются.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox8" name="faq-question" type="radio">
+                    <label for="faq-checkbox8" class="faq-question">Как устроено проживание и питание?</label>
+
+                    <div class="faq-answer">
+                        Школа проходит на базе отдыха Головинка. Участники живут в коттеджных домиках с
+                        3-4-местными
+                        номерами, лагерь занимает всю базу целиком. В каждом номере свой душ и туалет, белье и полотенца
+                        меняются персоналом базы во
+                        время
+                        уборки домов раз в 4 дня. Распределение по номерам формируют организаторы с учетом пола,
+                        возраста и заявленных ранее пожеланий. На территории базы есть небольшой ресторан, в котором
+                        будет организованы завтраки, обеды, ужины и перекусы. Если у участника есть пищевые аллергии
+                        или
+                        ограничения, сообщите нам об этом, и мы с радостью это учтем.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox9" name="faq-question" type="radio">
+                    <label for="faq-checkbox9" class="faq-question">Приглашаете ли вы участников из других городов и
+                        стран? Является ли знание русского языка
+                        обязательным условием?</label>
+
+                    <div class="faq-answer">
+                        Да, приглашаем, у нас нет таких ограничений. К нам приезжают ребята не только из самых
+                        разных
+                        городов России, но и других стран – СНГ, Европы, США. Многие участники и кураторы говорят
+                        по-английски, знание русского языка не является критически важным.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox10" name="faq-question" type="radio">
+                    <label for="faq-checkbox10" class="faq-question">Есть ли трансфер?</label>
+
+                    <div class="faq-answer">
+                        Мы организовываем общий трансфер из центра Москвы. Обычно в день начала школы мы выезжаем из
+                        офиса Яндекса и возвращаемся в офис одного из партнеров школы, где нас ждут с пиццей и
+                        экскурсией – участники побывали в офисах КРОК, Qiwi, Google, Rambler, Samsung, Avito,
+                        Tinkoff,
+                        1С и др. До места сбора участники добираются самостоятельно.
+                        Если есть необходимость встретить несовершеннолетнего участника из аэропорта или с вокзала,
+                        необходимо сообщить об этом за 10 дней до школы и выслать скан билета.
+                        Также есть возможность добраться до базы Головинка самостоятельно, заранее предупредив
+                        организаторов в письме.
+                        Если участник добирается до Москвы на самолете или поезде один, то мы с радостью расскажем о
+                        зачисленных ребятах из этого города для знакомства и организации совместной поездки.
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox12" name="faq-question" type="radio">
+                    <label for="faq-checkbox12" class="faq-question">Как организована безопасность?</label>
+
+                    <div class="faq-answer">
+                        Территория базы огорожена и находится под круглосуточной охраной. Кураторы и организаторы
+                        ночуют
+                        в соседних комнатах со своими группами. В нашей команде есть профессиональный врач, в
+                        экстренных
+                        ситуациях мы вызываем скорую помощь, связываемся с родителями, при необходимости везем
+                        участника
+                        в близлежащую больницу в Обнинске.
+
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox13" name="faq-question" type="radio">
+                    <label for="faq-checkbox13" class="faq-question">Какие документы и вещи нужны для
+                        поездки?</label>
+
+                    <div class="faq-answer">
+
+                        Для участия вам нужно предоставить: справку 079/у, справку об отсутствии инфекционных
+                        контактов,
+                        страховой полис, паспорт, а также копия паспорта одного из родителей или законных
+                        представителей. Кроме того, вам обязательно нужно будет подписать договор с нами, а также
+                        заполнить анкету об особенностях здоровья.
+                        Из вещей необходимо взять с собой:
+                        <ul>
+                            <li>ноутбук и телефон,</li>
+                            <li>средства личной гигиены, солнцезащитный крем и репеллент,</li>
+                            <li>сменную одежду и обувь, термокружку, принадлежности для купания,</li>
+                            <li>любимые музыкальные инструменты, книги, настольные игры, ракетки и др.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox14" name="faq-question" type="radio">
+                    <label for="faq-checkbox14" class="faq-question">Связь и посещения</label>
+
+                    <div class="faq-answer">
+                        Посещать и забирать несовершеннолетних участников могут только его законные представители
+                        или
+                        лица, которые имеют доверенность от законных представителей и паспорт. Все визиты возможны
+                        только во внеучебное время и согласовываются заранее с директором.
+
+                        В учебных домах доступен wi-fi, большая часть территории базы хорошо покрыта сотовой связью.
+                        Связь не во всех частях базы стабильна, также никто не отменял разряженные и забытые в
+                        номерах
+                        телефоны, поэтому всем родителям предоставляются телефоны организаторов для оперативной
+                        связи с
+                        участниками.
+
+                        Обычно мы настоятельно просим не посещать участников без острой необходимости и не звонить
+                        каждые 3 часа – дать им возможность адаптироваться к новой среде и самостоятельности под
+                        руководством кураторов, которые не только организовывают программу, но и отслеживают
+                        физическое
+                        и эмоциональное состояние ребят, а также их безопасность.
+
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+
+                    <input class="faq-radio" id="faq-checkbox15" name="faq-question" type="radio">
+                    <label for="faq-checkbox15" class="faq-question">Почему вы не зачисляете участников
+                        помладше?</label>
+
+                    <div class="faq-answer">
+                        Во-первых, выезд требует от участников некоторых навыков самостоятельности.
+                        Во-вторых, мы предлагаем очень насыщенную программу, она не подходит для ребят младше
+                        12 лет. Тем не менее, в нашей практике были исключения: напишите нам дополнительно, если
+                        кажется, что это ваш случай.
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="whitespace not-mobile"></div>
+    </div>
+
+    <!-- Партнёры -->
+    <div id="partners" class="partners normal-otstup">
+        <table>
+            <tr>
+                <td valign="middle">
+                    <div class="header">
+                        <h2 class="main-header">Партнёры</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="partner col-md-3 big-partner">
+                                <table>
+                                    <td valign="middle"><a href="http://www.ifmo.ru/ru/"><img style="max-height: 120%;"
+                                                                                              src="images/partners/itmo.jpg"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 little-partner">
+                                <table>
+                                    <td valign="middle"><a href="https://mipt.ru/"><img style="max-width: 75%"
+                                                                                        src="images/partners/mfti.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 big-partner">
+                                <table>
+                                    <td valign="middle"><a href="https://www.rvc.ru/"><img style="max-height: 55%;"
+                                                                                           src="images/partners/rvk.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 little-partner">
+                                <table>
+                                    <td valign="middle"><a href="http://www.intel.ru/"><img id="intel"
+                                                                                            style="max-height: 70%;"
+                                                                                            src="images/partners/intel.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+                            <div class="partner col-md-3 little-partner">
+                                <table>
+                                    <td valign="middle"><a href="https://www.hse.ru/"><img id="hse"
+                                                                                           src="images/partners/hse.jpg"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 big-partner croc">
+                                <table>
+                                    <td valign="middle"><a href="http://www.croc.ru/"><img
+                                            src="images/partners/croc.png"></a></td>
+                                </table>
+                            </div>
+
+
+                            <div class="partner col-md-3 big-partner">
+                                <table>
+                                    <td valign="middle"><a href="https://biocad.ru/"><img
+                                            src="images/partners/biocad.png"></a></td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 big-partner">
+                                <table>
+                                    <td valign="middle"><a href="https://www.abbyy.com/ru-ru/"><img id="abbyy"
+                                                                                                    src="images/partners/logo_abbyy.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 little-partner">
+                                <table>
+                                    <td valign="middle"><a href="http://letnyayashkola.org/"><img class="summer_camp"
+                                                                                                  src="images/partners/LS-logo.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3 little-partner">
+                                <table>
+                                    <td valign="middle"><a href="http://motorica.org/"><img
+                                            src="images/partners/motorika.png"></a></td>
+                                </table>
+                            </div>
+
+                            <div class="partner col-md-3">
+                                <table>
+                                    <td valign="middle"><a href="https://exonum.com/"><img class="exonum"
+                                                                                           src="images/partners/exonum_logo_dark_rectangle.png"></a>
+                                    </td>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Подвальчик -->
+    <div id="footer" class="footer">
+        <div class="green-line"></div>
+        <div class="container">
+            <div class="row footer-inside ">
+                <div class="col-md-2  not-mobile">
+                    <a href="https://goto.msk.ru/">
+                        <svg
+                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                id="logo2"
+                                version="1.1"
+                                inkscape:version="0.92.0 r"
+                                width="503.46667"
+                                height="340.26666"
+                                sodipodi:docname="logo.svg"
+                                inkscape:export-filename="/root/Downloads/goto.svg.png"
+                                inkscape:export-xdpi="90"
+                                inkscape:export-ydpi="90"
+                                viewBox="0 0 472 319">
+                            <metadata
+                                    id="metadata3045">
+                                <rdf:RDF>
+                                    <cc:Work
+                                            rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type
+                                                rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                        <dc:title/>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <defs
+                                    id="defs3043"/>
+                            <sodipodi:namedview
+                                    pagecolor="#ffffff"
+                                    bordercolor="#666666"
+                                    borderopacity="1"
+                                    objecttolerance="10"
+                                    gridtolerance="10"
+                                    guidetolerance="10"
+                                    inkscape:pageopacity="0"
+                                    inkscape:pageshadow="2"
+                                    inkscape:window-width="1344"
+                                    inkscape:window-height="710"
+                                    id="namedview3041"
+                                    showgrid="false"
+                                    inkscape:zoom="1.4142136"
+                                    inkscape:cx="185.78381"
+                                    inkscape:cy="138.46418"
+                                    inkscape:window-x="9"
+                                    inkscape:window-y="27"
+                                    inkscape:window-maximized="0"
+                                    inkscape:current-layer="svg3039"
+                                    inkscape:measure-start="32.3279,65.2324"
+                                    inkscape:measure-end="468.161,63.6944"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l14"
+                                    width="25.254168"
+                                    height="2.907552"
+                                    x="181.43124"
+                                    y="66.956772"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l13"
+                                    width="38.711979"
+                                    height="3.6552083"
+                                    x="174.03777"
+                                    y="76.759377"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l12"
+                                    width="3.4070172"
+                                    height="78.830986"
+                                    x="191.73201"
+                                    y="-159.10583"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l15"
+                                    width="140.65633"
+                                    height="2.2909138"
+                                    x="193.96417"
+                                    y="117.16447"
+                                    ry="0"
+                                    style="stroke-width:1.0046258"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l21"
+                                    width="3.4648397"
+                                    height="80.89315"
+                                    x="331.15564"
+                                    y="-117.16447"
+                                    style="stroke-width:0.9938947"
+                                    inkscape:label="#l21"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l16"
+                                    width="3.3229043"
+                                    height="80.414581"
+                                    x="281.28488"
+                                    y="36.884377"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l17"
+                                    width="3.0545654"
+                                    height="142.15425"
+                                    x="281.37143"
+                                    y="118.92671"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l18"
+                                    width="153.5858"
+                                    height="2.8195679"
+                                    x="281.37143"
+                                    y="258.26138"
+                                    style="stroke-width:0.9798438"
+                                    inkscape:label="#18"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l25"
+                                    width="3.4648335"
+                                    height="43.356323"
+                                    x="331.15564"
+                                    y="-160.52078"
+                                    style="stroke-width:1.0544796"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l24"
+                                    width="104.37209"
+                                    height="3.171093"
+                                    x="-435.50983"
+                                    y="157.36731"
+                                    style="stroke-width:1.30944657"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l23"
+                                    width="2.8713379"
+                                    height="124.2485"
+                                    x="432.63849"
+                                    y="36.289906"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l22"
+                                    width="104.27111"
+                                    height="2.9910061"
+                                    x="331.15564"
+                                    y="36.271313"
+                                    style="stroke-width:1.16072607"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l8"
+                                    width="165.31509"
+                                    height="3.3229218"
+                                    x="90.217186"
+                                    y="156.34323"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l11"
+                                    width="3.4890594"
+                                    height="105.06878"
+                                    x="252.04323"
+                                    y="156.34323"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l9"
+                                    width="3.5244904"
+                                    height="103.85484"
+                                    x="150.37804"
+                                    y="-260.9635"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l7"
+                                    width="3.7690902"
+                                    height="43.059231"
+                                    x="90.217186"
+                                    y="-199.40247"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l6"
+                                    width="45.593002"
+                                    height="3.2895203"
+                                    x="-135.81018"
+                                    y="196.11295"
+                                    style="stroke-width:0.99488616"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l5"
+                                    width="2.8195882"
+                                    height="64.615562"
+                                    x="132.99059"
+                                    y="-260.72852"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l4"
+                                    width="105.5028"
+                                    height="2.8839457"
+                                    x="30.307379"
+                                    y="257.84457"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l3"
+                                    width="2.9768591"
+                                    height="224.40488"
+                                    x="30.307379"
+                                    y="36.323631"
+                                    style="stroke-width:1.00854242"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l2"
+                                    width="102.48154"
+                                    height="3.0746872"
+                                    x="-132.78238"
+                                    y="36.323631"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l1"
+                                    width="2.6854546"
+                                    height="61.299072"
+                                    x="130.28442"
+                                    y="-97.622704"
+                                    style="stroke-width:2.54346585"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l10"
+                                    width="105.15425"
+                                    height="3.878531"
+                                    x="-255.53229"
+                                    y="257.53348"
+                                    style="stroke-width:1.01679945"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l19"
+                                    width="60.081383"
+                                    height="3.2563105"
+                                    x="-485.858"
+                                    y="111.03612"
+                                    transform="matrix(-0.7263686,-0.68730536,0.75530287,-0.6553759,0,0)"
+                                    inkscape:transform-center-x="-2.0080374"
+                                    inkscape:transform-center-y="1.2641921"
+                                    style="stroke-width:0.54062748"/>
+                            <rect
+                                    stroke="#373a3c"
+                                    fill="#373a3c"
+                                    id="l20"
+                                    width="59.504265"
+                                    height="3.2257044"
+                                    x="-171.79764"
+                                    y="-497.78763"
+                                    transform="matrix(-0.69850739,0.71560284,-0.64063175,-0.76784827,0,0)"
+                                    inkscape:transform-center-x="-1.2841308"
+                                    inkscape:transform-center-y="-1.9701991"
+                                    style="stroke-width:0.53549027"/>
+                            <rect
+                                    style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.01518762;stroke-opacity:1"
+                                    id="f2"
+                                    width="97.120377"
+                                    height="12.89807"
+                                    x="154.25607"
+                                    y="160.08438"/>
+                            <rect
+                                    style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-opacity:1"
+                                    id="f3"
+                                    width="14.101059"
+                                    height="96.67984"
+                                    x="237.45216"
+                                    y="160.37509"/>
+                            <rect
+                                    style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:0.99802643;stroke-opacity:1"
+                                    id="f4"
+                                    width="97.283607"
+                                    height="12.554064"
+                                    x="-251.54645"
+                                    y="244.44427"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.00154507;stroke-opacity:1"
+                                    id="f1"
+                                    width="13.246033"
+                                    height="96.530945"
+                                    x="154.26285"
+                                    y="-256.99835"
+                                    inkscape:label="#f1"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.1043483;stroke-opacity:1"
+                                    id="o2"
+                                    width="85.080566"
+                                    height="13.008534"
+                                    x="195.65213"
+                                    y="103.61953"
+                                    inkscape:label="#o2"/>
+                            <rect
+                                    style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.98586935;stroke-opacity:1"
+                                    id="o1"
+                                    width="12.3459"
+                                    height="79.35215"
+                                    x="284.99423"
+                                    y="-116.72614"
+                                    inkscape:label="#o1"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-opacity:1"
+                                    id="o3"
+                                    width="12.445862"
+                                    height="137.87376"
+                                    x="284.91214"
+                                    y="119.85478"/>
+                            <rect
+                                    style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.03497195;stroke-opacity:1"
+                                    id="o4"
+                                    width="133.78148"
+                                    height="12.701582"
+                                    x="284.91953"
+                                    y="245.01959"
+                                    ry="0"
+                                    inkscape:label="#o4"/>
+                            <path
+                                    style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.13236099;stroke-opacity:1"
+                                    inkscape:transform-center-x="-0.043321041"
+                                    inkscape:transform-center-y="-2.1486765"
+                                    d="m 433.65201,258.22424 -15.54659,-0.0478 0.004,-11.86762 1.11489,-1.70548 3.90632,3.70888 z"
+                                    id="o5"
+                                    inkscape:connector-curvature="0"
+                                    sodipodi:nodetypes="cccccc"/>
+                            <rect
+                                    style="fill:#4bb199;fill-opacity:1;stroke-width:0.94326967"
+                                    id="g1"
+                                    width="12.859791"
+                                    height="118.06738"
+                                    x="334.56671"
+                                    y="-157.31934"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    style="fill:#4bb199;fill-opacity:1;stroke-width:0.93728149"
+                                    id="g3"
+                                    width="12.69458"
+                                    height="118.0902"
+                                    x="419.94391"
+                                    y="39.259113"/>
+                            <rect
+                                    style="fill:#4bb199;fill-opacity:1;stroke-width:0.9375"
+                                    id="g2"
+                                    width="96.136391"
+                                    height="12.768278"
+                                    x="334.73193"
+                                    y="39.251953"/>
+                            <rect
+                                    style="fill:#4bb199;fill-opacity:1;stroke-width:0.94800091"
+                                    id="g4"
+                                    width="98.07177"
+                                    height="12.798264"
+                                    x="-432.63849"
+                                    y="144.55106"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94645733;image-rendering:auto"
+                                    id="first_yellow"
+                                    width="11.170944"
+                                    height="58.465397"
+                                    x="119.11347"
+                                    y="-97.622711"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:1.37446415"
+                                    id="second_yellow"
+                                    width="96.801811"
+                                    height="13.744041"
+                                    x="-130.28442"
+                                    y="39.15731"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:2.53241658"
+                                    id="third_yellow"
+                                    width="13.148556"
+                                    height="218.69647"
+                                    x="33.268436"
+                                    y="39.157318"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:1.04482234"
+                                    id="five_yellow"
+                                    width="99.74662"
+                                    height="13.813522"
+                                    x="33.268436"
+                                    y="244.04027"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94531274"
+                                    id="six_yellow"
+                                    width="13.308807"
+                                    height="58.496136"
+                                    x="119.70625"
+                                    y="-257.85379"
+                                    transform="scale(1,-1)"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:1.85976994"
+                                    id="seven_yellow"
+                                    width="55.683327"
+                                    height="13.412837"
+                                    x="-133.01506"
+                                    y="199.35767"
+                                    transform="scale(-1,1)"/>
+                            <rect
+                                    style="fill:#f6e76a;fill-opacity:1;stroke-width:1.20284641"
+                                    id="eight_yellow"
+                                    width="12.865559"
+                                    height="43.096901"
+                                    x="77.351624"
+                                    y="-199.40247"
+                                    transform="scale(1,-1)"/>
+                            <flowRoot
+xml:space="preserve"
+id="flowRoot127"
+style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:25px;letter-spacing:0px;word-spacing:0px"><flowRegion
+id="flowRegion129"><rect
+id="rect131"
+width="386.11795"
+height="41.240044"
+x="35.503185"
+y="278.11041" /></flowRegion><flowPara
+id="flowPara133"></flowPara></flowRoot>  <text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:41.19104385px;line-height:25.74440193px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:1.0297761"
+x="194.32864"
+y="327.32184"
+id="text3859"
+transform="scale(1.0984278,0.9103921)"><tspan
+sodipodi:role="line"
+x="194.32864"
+y="327.32184"
+id="tspan3857"
+style="stroke-width:1.0297761"><tspan
+x="194.32864"
+y="327.32184"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.42925262px;line-height:46.33992386px;font-family:'Ubuntu';-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:1.0297761"
+id="tspan3855"></tspan></tspan></text>
+<text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:23.4375px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:0.9375"
+x="123.08036"
+y="293.84488"
+id="text145"><tspan
+sodipodi:role="line"
+id="tspan143"
+x="123.08036"
+y="293.84488"
+style="stroke-width:0.9375">     </tspan></text>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mobile"><a href="https://goto.msk.ru/">
+                    <svg
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            id="logo2"
+                            version="1.1"
+                            inkscape:version="0.92.0 r"
+                            width="503.46667"
+                            height="340.26666"
+                            sodipodi:docname="logo.svg"
+                            inkscape:export-filename="/root/Downloads/goto.svg.png"
+                            inkscape:export-xdpi="90"
+                            inkscape:export-ydpi="90"
+                            viewBox="0 0 472 319">
+                        <metadata
+                                id="metadata3045">
+                            <rdf:RDF>
+                                <cc:Work
+                                        rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type
+                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+                        <defs
+                                id="defs3043"/>
+                        <sodipodi:namedview
+                                pagecolor="#ffffff"
+                                bordercolor="#666666"
+                                borderopacity="1"
+                                objecttolerance="10"
+                                gridtolerance="10"
+                                guidetolerance="10"
+                                inkscape:pageopacity="0"
+                                inkscape:pageshadow="2"
+                                inkscape:window-width="1344"
+                                inkscape:window-height="710"
+                                id="namedview3041"
+                                showgrid="false"
+                                inkscape:zoom="1.4142136"
+                                inkscape:cx="185.78381"
+                                inkscape:cy="138.46418"
+                                inkscape:window-x="9"
+                                inkscape:window-y="27"
+                                inkscape:window-maximized="0"
+                                inkscape:current-layer="svg3039"
+                                inkscape:measure-start="32.3279,65.2324"
+                                inkscape:measure-end="468.161,63.6944"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l14"
+                                width="25.254168"
+                                height="2.907552"
+                                x="181.43124"
+                                y="66.956772"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l13"
+                                width="38.711979"
+                                height="3.6552083"
+                                x="174.03777"
+                                y="76.759377"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l12"
+                                width="3.4070172"
+                                height="78.830986"
+                                x="191.73201"
+                                y="-159.10583"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l15"
+                                width="140.65633"
+                                height="2.2909138"
+                                x="193.96417"
+                                y="117.16447"
+                                ry="0"
+                                style="stroke-width:1.0046258"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l21"
+                                width="3.4648397"
+                                height="80.89315"
+                                x="331.15564"
+                                y="-117.16447"
+                                style="stroke-width:0.9938947"
+                                inkscape:label="#l21"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l16"
+                                width="3.3229043"
+                                height="80.414581"
+                                x="281.28488"
+                                y="36.884377"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l17"
+                                width="3.0545654"
+                                height="142.15425"
+                                x="281.37143"
+                                y="118.92671"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l18"
+                                width="153.5858"
+                                height="2.8195679"
+                                x="281.37143"
+                                y="258.26138"
+                                style="stroke-width:0.9798438"
+                                inkscape:label="#18"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l25"
+                                width="3.4648335"
+                                height="43.356323"
+                                x="331.15564"
+                                y="-160.52078"
+                                style="stroke-width:1.0544796"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l24"
+                                width="104.37209"
+                                height="3.171093"
+                                x="-435.50983"
+                                y="157.36731"
+                                style="stroke-width:1.30944657"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l23"
+                                width="2.8713379"
+                                height="124.2485"
+                                x="432.63849"
+                                y="36.289906"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l22"
+                                width="104.27111"
+                                height="2.9910061"
+                                x="331.15564"
+                                y="36.271313"
+                                style="stroke-width:1.16072607"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l8"
+                                width="165.31509"
+                                height="3.3229218"
+                                x="90.217186"
+                                y="156.34323"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l11"
+                                width="3.4890594"
+                                height="105.06878"
+                                x="252.04323"
+                                y="156.34323"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l9"
+                                width="3.5244904"
+                                height="103.85484"
+                                x="150.37804"
+                                y="-260.9635"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l7"
+                                width="3.7690902"
+                                height="43.059231"
+                                x="90.217186"
+                                y="-199.40247"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l6"
+                                width="45.593002"
+                                height="3.2895203"
+                                x="-135.81018"
+                                y="196.11295"
+                                style="stroke-width:0.99488616"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l5"
+                                width="2.8195882"
+                                height="64.615562"
+                                x="132.99059"
+                                y="-260.72852"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l4"
+                                width="105.5028"
+                                height="2.8839457"
+                                x="30.307379"
+                                y="257.84457"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l3"
+                                width="2.9768591"
+                                height="224.40488"
+                                x="30.307379"
+                                y="36.323631"
+                                style="stroke-width:1.00854242"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l2"
+                                width="102.48154"
+                                height="3.0746872"
+                                x="-132.78238"
+                                y="36.323631"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l1"
+                                width="2.6854546"
+                                height="61.299072"
+                                x="130.28442"
+                                y="-97.622704"
+                                style="stroke-width:2.54346585"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l10"
+                                width="105.15425"
+                                height="3.878531"
+                                x="-255.53229"
+                                y="257.53348"
+                                style="stroke-width:1.01679945"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l19"
+                                width="60.081383"
+                                height="3.2563105"
+                                x="-485.858"
+                                y="111.03612"
+                                transform="matrix(-0.7263686,-0.68730536,0.75530287,-0.6553759,0,0)"
+                                inkscape:transform-center-x="-2.0080374"
+                                inkscape:transform-center-y="1.2641921"
+                                style="stroke-width:0.54062748"/>
+                        <rect
+                                stroke="#373a3c"
+                                fill="#373a3c"
+                                id="l20"
+                                width="59.504265"
+                                height="3.2257044"
+                                x="-171.79764"
+                                y="-497.78763"
+                                transform="matrix(-0.69850739,0.71560284,-0.64063175,-0.76784827,0,0)"
+                                inkscape:transform-center-x="-1.2841308"
+                                inkscape:transform-center-y="-1.9701991"
+                                style="stroke-width:0.53549027"/>
+                        <rect
+                                style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.01518762;stroke-opacity:1"
+                                id="f2"
+                                width="97.120377"
+                                height="12.89807"
+                                x="154.25607"
+                                y="160.08438"/>
+                        <rect
+                                style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-opacity:1"
+                                id="f3"
+                                width="14.101059"
+                                height="96.67984"
+                                x="237.45216"
+                                y="160.37509"/>
+                        <rect
+                                style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:0.99802643;stroke-opacity:1"
+                                id="f4"
+                                width="97.283607"
+                                height="12.554064"
+                                x="-251.54645"
+                                y="244.44427"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                style="fill:#633b92;fill-opacity:1;stroke:#633b92;stroke-width:1.00154507;stroke-opacity:1"
+                                id="f1"
+                                width="13.246033"
+                                height="96.530945"
+                                x="154.26285"
+                                y="-256.99835"
+                                inkscape:label="#f1"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.1043483;stroke-opacity:1"
+                                id="o2"
+                                width="85.080566"
+                                height="13.008534"
+                                x="195.65213"
+                                y="103.61953"
+                                inkscape:label="#o2"/>
+                        <rect
+                                style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.98586935;stroke-opacity:1"
+                                id="o1"
+                                width="12.3459"
+                                height="79.35215"
+                                x="284.99423"
+                                y="-116.72614"
+                                inkscape:label="#o1"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-opacity:1"
+                                id="o3"
+                                width="12.445862"
+                                height="137.87376"
+                                x="284.91214"
+                                y="119.85478"/>
+                        <rect
+                                style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:1.03497195;stroke-opacity:1"
+                                id="o4"
+                                width="133.78148"
+                                height="12.701582"
+                                x="284.91953"
+                                y="245.01959"
+                                ry="0"
+                                inkscape:label="#o4"/>
+                        <path
+                                style="fill:#ec8b6d;fill-opacity:1;stroke:#ec8b6d;stroke-width:0.13236099;stroke-opacity:1"
+                                inkscape:transform-center-x="-0.043321041"
+                                inkscape:transform-center-y="-2.1486765"
+                                d="m 433.65201,258.22424 -15.54659,-0.0478 0.004,-11.86762 1.11489,-1.70548 3.90632,3.70888 z"
+                                id="o5"
+                                inkscape:connector-curvature="0"
+                                sodipodi:nodetypes="cccccc"/>
+                        <rect
+                                style="fill:#4bb199;fill-opacity:1;stroke-width:0.94326967"
+                                id="g1"
+                                width="12.859791"
+                                height="118.06738"
+                                x="334.56671"
+                                y="-157.31934"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                style="fill:#4bb199;fill-opacity:1;stroke-width:0.93728149"
+                                id="g3"
+                                width="12.69458"
+                                height="118.0902"
+                                x="419.94391"
+                                y="39.259113"/>
+                        <rect
+                                style="fill:#4bb199;fill-opacity:1;stroke-width:0.9375"
+                                id="g2"
+                                width="96.136391"
+                                height="12.768278"
+                                x="334.73193"
+                                y="39.251953"/>
+                        <rect
+                                style="fill:#4bb199;fill-opacity:1;stroke-width:0.94800091"
+                                id="g4"
+                                width="98.07177"
+                                height="12.798264"
+                                x="-432.63849"
+                                y="144.55106"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94645733;image-rendering:auto"
+                                id="first_yellow"
+                                width="11.170944"
+                                height="58.465397"
+                                x="119.11347"
+                                y="-97.622711"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:1.37446415"
+                                id="second_yellow"
+                                width="96.801811"
+                                height="13.744041"
+                                x="-130.28442"
+                                y="39.15731"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:2.53241658"
+                                id="third_yellow"
+                                width="13.148556"
+                                height="218.69647"
+                                x="33.268436"
+                                y="39.157318"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:1.04482234"
+                                id="five_yellow"
+                                width="99.74662"
+                                height="13.813522"
+                                x="33.268436"
+                                y="244.04027"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:0.94531274"
+                                id="six_yellow"
+                                width="13.308807"
+                                height="58.496136"
+                                x="119.70625"
+                                y="-257.85379"
+                                transform="scale(1,-1)"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:1.85976994"
+                                id="seven_yellow"
+                                width="55.683327"
+                                height="13.412837"
+                                x="-133.01506"
+                                y="199.35767"
+                                transform="scale(-1,1)"/>
+                        <rect
+                                style="fill:#f6e76a;fill-opacity:1;stroke-width:1.20284641"
+                                id="eight_yellow"
+                                width="12.865559"
+                                height="43.096901"
+                                x="77.351624"
+                                y="-199.40247"
+                                transform="scale(1,-1)"/>
+                        <flowRoot
+xml:space="preserve"
+id="flowRoot127"
+style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:25px;letter-spacing:0px;word-spacing:0px"><flowRegion
+id="flowRegion129"><rect
+id="rect131"
+width="386.11795"
+height="41.240044"
+x="35.503185"
+y="278.11041" /></flowRegion><flowPara
+id="flowPara133"></flowPara></flowRoot>  <text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:41.19104385px;line-height:25.74440193px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:1.0297761"
+x="194.32864"
+y="327.32184"
+id="text3859"
+transform="scale(1.0984278,0.9103921)"><tspan
+sodipodi:role="line"
+x="194.32864"
+y="327.32184"
+id="tspan3857"
+style="stroke-width:1.0297761"><tspan
+x="194.32864"
+y="327.32184"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.42925262px;line-height:46.33992386px;font-family:'Ubuntu';-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:1.0297761"
+id="tspan3855"></tspan></tspan></text>
+<text
+xml:space="preserve"
+style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:23.4375px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#373a3c;fill-opacity:1;stroke:none;stroke-width:0.9375"
+x="123.08036"
+y="293.84488"
+id="text145"><tspan
+sodipodi:role="line"
+id="tspan143"
+x="123.08036"
+y="293.84488"
+style="stroke-width:0.9375">     </tspan></text>
+                    </svg>
+                </a>
+                </div>
+
+                <div class="col-md-4 description not-mobile">
+                    <p style="font-size: 11px;line-height: 1.5;">Образовательный проект, посвященный проектной
+                        деятельности
+                        в различных высокотехнологических
+                        областях. Использование визуальных материалов только с согласия создателей проекта. Все
+                        права
+                        защищены. </p>
+                </div>
+
+                <div class="description mobile">
+                    <p style="text-align: center; ">Образовательный проект, посвященный проектной деятельности в
+                        различных
+                        высокотехнологических
+                        областях. Использование визуальных материалов только с согласия создателей проекта. Все
+                        права
+                        защищены. </p>
+                </div>
+                <div class="contacts">
+                    <div class="col-md-6 not-mobile">
+                        <p style="
+    padding-top: 0;
+"><a style="color: rgb(230, 25, 25)" href="https://vk.com/goto_msk">ВКонтакте</a></p>
+                        <p><a style="color: rgb(230, 25, 25)" href="tel:89852443226">+7 (985) 2443226</a></p>
+                        <a><a style="color: rgb(230, 25, 25)"
+                              href="mailto:school@goto.msk.ru">school@goto.msk.ru</a></a>
+                    </div>
+                    <div class="mobile">
+                        <p style="
+    padding-top: 0; text-align: center
+"><a style="color: rgb(230, 25, 25)" href="https://vk.com/goto_msk">ВКонтакте</a></p>
+                        <p style="text-align: center"><a style="color: rgb(230, 25, 25)" href="tel:89852443226">+7 (985)
+                            2443226</a></p>
+                        <p style="text-align: center"><a style="color: rgb(230, 25, 25)"
+                                                         href="mailto:school@goto.msk.ru">school@goto.msk.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Трекер большого брата -->
+    <div style='display: none;'>
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=27106058&amp;from=informer"
+           target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27106058/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                                               style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
+                                               title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                                               onclick="try{Ya.Metrika.informer({i:this,id:27106058,lang:'ru'});return false}catch(e){}"/></a>
+        <!-- /Yandex.Metrika informer -->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter27106058 = new Ya.Metrika({
+                            id: 27106058,
+                            webvisor: true,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true
+                        });
+                    } catch (e) {
+                    }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript>
+            <div><img src="//mc.yandex.ru/watch/27106058" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            if ($("body").width() > 1010) {
+                $('.slider').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                });
+
+                $('.comments').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 120000
+                });
+            }
+        });
+
+        $(document).resize(function () {
+            setTimeout(function () {
+                $(".golovinka-special").css("height", $('#normal').height());
+            }, 300);
+
+            if ($("body").width() > 1010) {
+                $('.slider').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                });
+
+                $('.comments').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 120000
+                });
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <!--[if IE]>
+    <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/logo_animation.js"></script>
+    <script src="js/shari.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69153546-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2101650410062511');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=2101650410062511&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        goog_snippet_vars = function () {
+            var w = window;
+            w.google_conversion_id = 900312791;
+            w.google_conversion_label = "bk8qCJz_2IEBENfdpq0D";
+            w.google_remarketing_only = false;
+        }
+        // DO NOT CHANGE THE CODE BELOW.
+        goog_report_conversion = function (url) {
+            goog_snippet_vars();
+            window.google_conversion_format = "3";
+            var opt = new Object();
+            opt.onload_callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            }
+            var conv_handler = window['google_trackConversion'];
+            if (typeof(conv_handler) == 'function') {
+                conv_handler(opt);
+            }
+        }
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+            src="//www.googleadservices.com/pagead/conversion_async.js">
+    </script>
+</body>
+</html>
